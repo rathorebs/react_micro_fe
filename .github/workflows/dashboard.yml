@@ -3,9 +3,9 @@ name: deploy-dashboard
 on:
   push:
     branches:
-      - main
+      - master
     paths:
-      - 'packages/dashboard/**'
+      - "packages/dashboard/**"
 
 defaults:
   run:
