@@ -2,7 +2,8 @@
   "name": "dashboard",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --config config/webpack.dev.js",
+    "start": "webpack serve --open --config config/webpack.dev.js",
+    "start-live": "webpack serve --open --config config/webpack.dev.js --live-reload --hot",
     "build": "webpack --config config/webpack.prod.js"
   },
   "dependencies": {
