@@ -1,0 +1,153 @@
+.subscription-container.corporate-container {
+  width: calc(100% - 192px);
+}
+
+.subscription-container h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.subscription-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  /* //width: 85%; */
+  margin-top: 0.75rem;
+}
+
+.subscription-wrapper-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fbfbfb;
+  padding: 1rem;
+}
+
+.subscribed-subscriptions,
+.subscribed-sessions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #f3f3f2;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+.subscribed-employees {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  align-items: center;
+}
+
+.subscribed-employees > button {
+  width: 40%;
+}
+
+.subscription-management-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fbfbfb;
+  padding: 1rem;
+}
+
+.subscription-options {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 0;
+  color: #16294c;
+}
+
+.subscription-options > p {
+  margin-bottom: 0;
+}
+
+.subscription-title > p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+  margin-top: 1rem;
+}
+
+.subscription-centre-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.add-remove-btn-container {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.add-seat-btn,
+.remove-seat-btn {
+  width: 100%;
+}
+
+.subscription-centre {
+  width: 100%;
+}
+
+.subscription-centre .spinner-border {
+  vertical-align: inherit !important;
+  border-width: 0.1rem;
+}
+
+.subscription-wrapper-top > div:first-child {
+  padding-top: 0;
+}
+.subscription-wrapper-top > div:last-child {
+  padding-bottom: 0;
+}
+.subscribed-sessions {
+  border: 0;
+}
+.subscription-title {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #16294c;
+  margin: 0;
+  min-width: 130px;
+}
+
+.subscription-data {
+  width: inherit;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #16294c;
+  margin: 0.2rem 0 0 0;
+}
+
+@media screen and (max-width: 991px) {
+  .add-remove-btn-container {
+    flex-direction: column;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.subscription-plan-info {
+  display: flex;
+  width: 60%;
+}

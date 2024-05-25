@@ -1,0 +1,229 @@
+.FeedbackByTeacher-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #16294c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FeedbackByTeacher-message-window {
+  width: 472px;
+  /* height:710px; */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.65rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-bottom: 1rem;
+}
+
+.FeedbackByTeacher-progressor p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 140%;
+  text-align: center;
+
+  color: #16294c;
+}
+
+.FeedbackByTeacher-progressor img {
+  position: absolute;
+  top: 1rem;
+  right: 22px;
+}
+
+.FeedbackByTeacher-chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.FeedbackByTeacher-teacher-message p {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: #16294c;
+  background-color: #e8f2fb;
+  padding: 0.5rem 0.45rem;
+  width: 360px;
+  /* height: 125px; */
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.FeedbackByTeacher-student-emoji {
+  margin-top: 1.5rem;
+  display: flex;
+  margin-left: 0.75rem;
+  justify-content: flex-end;
+}
+
+.extremeHappy,
+.happy,
+.neutral,
+.sad,
+.extremeSad {
+  width: 60px;
+  height: 60px;
+  background: #f3f3f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-left: 0.6rem;
+}
+
+.FeedbackByTeacher-teacher-Next-message p {
+  /* font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.95rem; */
+  font-family: Sofia Pro;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: #16294c;
+  background-color: #e8f2fb;
+  padding: 0.5rem 1rem;
+  margin-top: 1.65rem;
+  width: 360px;
+  height: 62px;
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.expectations {
+  font-family: Sofia Pro;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: right;
+  color: #5d686e;
+  width: 240px;
+  padding: 0.5rem 0;
+  background: #f3f3f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.FeedbackByTeacher-student-expectations {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.75rem;
+
+  align-items: flex-end;
+}
+
+.FeedbackByTeacher-chat-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.FeedbackByTeacher-chat-title label {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.FeedbackByTeacher-chat-title input {
+  background: #ffffff;
+  border: 1px solid #f3f3f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  outline: none;
+  padding: 0.45rem;
+  margin-top: 0.25rem;
+}
+
+.FeedbackByTeacher-chat-note {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.FeedbackByTeacher-chat-note label {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.FeedbackByTeacher-chat-note textarea {
+  background: #ffffff;
+  border: 1px solid #f3f3f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  outline: none;
+  padding: 0.45rem;
+  margin-top: 0.25rem;
+}
+
+.FeedbackByTeacher-chat-note textarea::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #5d686e;
+}
+
+.FeedbackByTeacher-chat-form button {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.95rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #5582a7;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 1.25rem;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+.FeedbackByTeacher-chat-first {
+  font-family: Sofia Pro;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: right;
+  color: #16294c;
+  background: #f3f3f2;
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.FeedbackByTeacher-chat-second {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 140%;
+  color: #16294c;
+  background: #e8f2fb;
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+}

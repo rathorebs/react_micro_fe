@@ -1,0 +1,151 @@
+@import "styles/global.scss";
+
+.common-page-white {
+  background: $white;
+}
+
+.common-page {
+  top: rem(-89px);
+  width: calc(100% + 32px);
+  margin-left: rem(-16px);
+  position: relative;
+
+  .common-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 92px);
+
+    .spinner {
+      color: $black;
+      opacity: 0.7;
+    }
+  }
+
+  .common-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 92px);
+
+    font-weight: 500;
+    font-size: rem(16px);
+  }
+
+  .common-header-filled {
+    opacity: 0.7;
+    background-color: $off-white;
+  }
+
+  .common-header {
+    margin-left: rem(-16px);
+    padding: rem(13px) 0 0 rem(15px);
+
+    position: inherit;
+    height: rem(92px);
+    z-index: 1;
+
+    .common-title-div {
+      max-width: rem(1200px + 66.6px);
+      margin: auto;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: rem(15px);
+
+      padding: rem(22px) rem(33.3px) rem(22px) rem(33.3px);
+
+      .back-icon-container {
+        width: rem(36px);
+        height: rem(36px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .common-title {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+
+        display: flex;
+        align-items: center;
+        height: rem(36px);
+
+        font-size: rem(16px);
+        color: $black;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-right: auto;
+      }
+      .common-children {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: rem(36px);
+        margin-left: rem(10px);
+      }
+    }
+  }
+  .common-content-sm {
+    max-width: rem(calc(740px + 66.6px));
+  }
+
+  .common-content-lg {
+    max-width: rem(1200px + 66.6px);
+  }
+
+  .common-content {
+    margin: auto;
+    margin-top: rem(44px);
+    padding: rem(0px) rem(33.3px) rem(0px) rem(33.3px);
+    text-align: left;
+    white-space: break-spaces;
+
+    .common-search-and-filter {
+      margin-bottom: rem(32px);
+    }
+
+    .common-searchbox {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-bottom: rem(18px);
+
+      .common-filtericon {
+        margin-left: rem(17px);
+      }
+    }
+
+    .common-no-results {
+      text-align: center;
+
+      h3 {
+        margin-bottom: rem(20px);
+      }
+
+      p {
+        margin: auto;
+        width: rem(292px);
+        color: $dark-grey;
+      }
+    }
+  }
+}
+
+.landing-picture {
+  background: $black;
+
+  width: 100%;
+
+  height: rem(480px);
+  min-height: rem(480px);
+  max-height: rem(480px);
+
+  object-fit: cover;
+}

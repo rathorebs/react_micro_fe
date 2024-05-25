@@ -1,0 +1,59 @@
+.membershipPopup-container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.membershipPopup-wrapper {
+  width: 100%;
+  height: 109%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.membershipPopup-model {
+  padding: 1.8rem 2.4rem;
+  width: 288px;
+  height: 378px;
+  background: #fafafc;
+  box-shadow: 0px -4px 24px -5px rgba(22, 41, 76, 0.1);
+  border-radius: 0.2rem 0.2rem 0 0;
+  position: absolute;
+  top: 2.6rem;
+  opacity: 1;
+  z-index: 100;
+}
+
+.membershipPopup-model h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: #16294c;
+  margin: 0.9rem 0px;
+}
+
+.membershipPopup-model p {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.membershipPopup-model-crossBtn {
+  position: absolute;
+  right: 1.15rem;
+  top: 1rem;
+}

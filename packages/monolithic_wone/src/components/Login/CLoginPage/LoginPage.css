@@ -1,0 +1,193 @@
+.LoginPage-container {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f3f3f2;
+  padding: 5rem 0.75rem 0 0.75rem;
+}
+
+.LoginPage-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 264px;
+  height: 360px;
+}
+
+.LoginPage-logo {
+  margin-bottom: 1.6rem;
+}
+
+.LoginResetPassword-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 264px;
+  height: 340px;
+}
+
+.LoginPage-email,
+.LoginPage-password {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #f3f3f2;
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.LoginPage-email img,
+.LoginPage-password img {
+  /* flex: 0.5; */
+  background-color: #ffffff;
+  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+  width: 13%;
+}
+
+.LoginPage-email input,
+.LoginPage-password input {
+  flex: 3;
+  outline: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border: none;
+  padding: 0.4rem 0.4rem;
+  width: 100%;
+}
+
+.LoginPage-signIn {
+  margin-top: 0.75rem;
+}
+.LoginPage-wrapper input:active {
+  outline: none;
+}
+
+.LoginResetPassword-wrapper input:active {
+  outline: none;
+}
+
+.LoginPage-wrapper button,
+.LoginResetPassword-wrapper button {
+  width: 100%;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  background: #ed6b64;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  position: relative;
+}
+
+.LoginPage-wrapper button .spinner-border,
+.LoginResetPassword-wrapper button .spinner-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.75rem;
+  margin-top: -0.75rem;
+  border-color: #16294c;
+  border-right-color: transparent;
+}
+
+.LoginPage-wrapper h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.LoginResetPassword-wrapper h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.let-us-help-you {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  text-align: center;
+  color: #5582a7;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.changePassword-h2 {
+  font-family: Sofia Pro !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  margin-bottom: 0 !important;
+  line-height: 140% !important;
+  color: #16294c !important;
+}
+
+.teacher-student-tab {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+.tab-label {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #16294c;
+  cursor: pointer;
+}
+
+.tab-uderline {
+  padding-bottom: 0.25rem;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 767px) {
+  .LoginPage-container {
+    padding-top: 2.5rem;
+  }
+  .LoginPage-logo {
+    width: 50%;
+  }
+}
+.forgot-pass {
+  cursor: pointer;
+  color: #0d6efd;
+}

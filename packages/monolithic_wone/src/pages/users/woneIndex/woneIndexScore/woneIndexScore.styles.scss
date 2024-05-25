@@ -1,0 +1,345 @@
+@import "../../../../variables";
+@import "../../../../global.scss";
+.wone-index-score {
+  h3 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 140%;
+    color: #16294c;
+    margin-top: 0.5rem;
+    @media screen and (max-width: 768px) {
+      margin-top: 1rem;
+    }
+  }
+  .score-box-common {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 24px -5px #e5e5e5;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    h6 {
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.8rem;
+      line-height: 140%;
+      color: #5582a7;
+      white-space: pre-line;
+    }
+  }
+  .btn-container {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .btn-assessment {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 140%;
+    color: #ffffff;
+    background: #ed6b64;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.5rem;
+    width: 215px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    &.diabled {
+      //cursor: not-allowed;
+      cursor: pointer;
+    }
+  }
+  .score-breakdown {
+    .score-box-left {
+      box-shadow: 0px 4px 24px -5px #e5e5e5;
+      background: url("../../../../Assets/bg-top-left.png") 0px 0px no-repeat
+        #ffffff;
+      background-size: 42px;
+      padding: 1.1rem 1rem;
+      box-sizing: border-box;
+      @media screen and (max-width: 991px) {
+        margin-top: 0;
+      }
+      &.second {
+        @media screen and (max-width: 991px) {
+          margin-top: 1rem;
+        }
+      }
+    }
+    .score-box-right {
+      box-shadow: 0px 4px 24px -5px #e5e5e5;
+      background: url("../../../../Assets/bg-top-left.png") 0px 0px no-repeat,
+        url("../../../../Assets/bg-top-right.png") 100% 0px no-repeat #ffffff;
+      background-size: 42px, 36px;
+      padding: 1.1rem 1rem;
+      box-sizing: border-box;
+      @media screen and (max-width: 991px) {
+        margin-top: 1rem;
+      }
+    }
+    .score-header-energy {
+      width: 64px;
+      height: 64px;
+      background: url("../../../../Assets/energy.svg") 0 0 no-repeat #ffffff;
+      background-size: 64px;
+      margin: 0 auto;
+
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+      padding: 0.5rem 0 0 0;
+      box-sizing: border-box;
+      span {
+        font-size: 0.8rem;
+      }
+    }
+    .score-header-resilience {
+      width: 64px;
+      height: 64px;
+      background: url("../../../../Assets/resilience.svg") 0 0 no-repeat #ffffff;
+      background-size: 64px;
+      margin: 0 auto;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+      padding: 0.5rem 0 0 0;
+      box-sizing: border-box;
+      span {
+        font-size: 0.8rem;
+      }
+    }
+    .score-header-nutrition-activity {
+      width: 64px;
+      height: 64px;
+      background: url("../../../../Assets/nutrition_activity.svg") 0 0 no-repeat
+        #ffffff;
+      background-size: 64px;
+      margin: 0 auto;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+      padding: 0.5rem 0 0 0;
+      box-sizing: border-box;
+      span {
+        font-size: 0.8rem;
+      }
+    }
+    h4 {
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.8rem;
+      line-height: 140%;
+      text-align: center;
+      color: #435473;
+      border-bottom: 1px solid #f3f3f2;
+      padding: 0.5rem 0 0.5rem 0;
+    }
+    .score-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 320px;
+      box-sizing: border-box;
+
+      p {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.8rem;
+        line-height: 140%;
+        color: #16294c;
+        white-space: pre-line;
+      }
+      .recommended-content {
+        width: 100%;
+        margin-top: 0.5rem;
+        display: flex;
+        a {
+          color: #16294c;
+
+          &:link {
+            font-weight: bold;
+          }
+
+          &:visited {
+            font-weight: bold;
+          }
+        }
+
+        @media screen and (max-width: 992px) {
+          margin-top: 1.25rem;
+        }
+
+        .videos-card-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          -moz-osx-font-smoothing: grayscale;
+          width: 50%;
+
+          .video-card {
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            transition: transform 0.25s ease-out;
+            background-color: $white-color;
+            cursor: pointer;
+            width: 95%;
+            height: 100%;
+            box-shadow: 0px 4px 24px -5px #e5e5e5;
+
+            .video-thumb {
+              width: 100%;
+              height: 131px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              position: relative;
+
+              .image {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .play-icon {
+                  background: #ed6b64;
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  box-sizing: border-box;
+                  box-shadow: 0px 4px 24px -5px #e5e5e5;
+                }
+              }
+            }
+
+            .video-thumb-desc {
+              padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+              h5 {
+                font-family: "Sofia Pro";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.7rem;
+                line-height: 140%;
+                color: $bunting-color;
+              }
+
+              p {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 0.6rem;
+                line-height: 140%;
+                color: $fiord-color;
+              }
+            }
+          }
+        }
+
+        .article-container {
+          -moz-osx-font-smoothing: grayscale;
+          width: 50%;
+          .articles {
+            background-color: $white-color;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 95%;
+            height: 100%;
+            box-shadow: 0px 4px 24px -5px #e5e5e5;
+            float: right;
+            .article-thumb {
+              width: 100%;
+              height: 131px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .article-desc {
+              padding: 0.5rem 0.5rem;
+
+              h6 {
+                font-family: "Sofia Pro";
+                font-size: 0.7rem;
+                line-height: 140%;
+                color: $bunting-color;
+              }
+
+              p {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 0.6rem;
+                line-height: 140%;
+                color: $fiord-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wone-modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: $white-color;
+  button {
+    &.custom-close {
+      position: relative !important;
+    }
+  }
+  .video-header-container {
+    padding: 0 0;
+    align-items: center;
+    position: relative;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 140%;
+  }
+}
+.video-body-container {
+  .rh5v-DefaultPlayer_component {
+    height: 550px;
+    .rh5v-Overlay_inner {
+      width: 32px !important;
+      height: 32px !important;
+    }
+  }
+}

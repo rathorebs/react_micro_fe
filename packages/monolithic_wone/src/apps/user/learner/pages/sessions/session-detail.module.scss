@@ -1,0 +1,246 @@
+@import "styles/global.scss";
+@import "styles/colors.scss";
+
+@import "apps/user/learner/styles/common.module.scss";
+
+.session-picture-container {
+  // margin-top: rem(-136px);
+  position: relative;
+
+  .session-picture {
+    @extend .landing-picture;
+
+    height: rem(480px);
+    min-height: rem(480px);
+    max-height: rem(480px);
+  }
+
+  .pillar-service-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 rem(15px) 0 rem(15px);
+    bottom: rem(15px);
+
+    .pillar-service {
+      display: flex;
+      justify-content: space-between;
+      width: rem(740px);
+      margin: auto;
+    }
+
+    .pills {
+      display: flex;
+      gap: rem(6px);
+    }
+  }
+}
+
+.details-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-top: rem(35px);
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .title-container {
+      width: 60%;
+
+      .title {
+        font-size: rem(20px);
+        font-weight: 500;
+        line-height: 1.3;
+        color: $black;
+      }
+
+      .subtitle {
+        margin-top: rem(7px);
+        font-size: rem(16px);
+        font-weight: normal;
+        line-height: 1.63;
+        color: $black;
+      }
+    }
+    .time-biometrics-container {
+      .time-container {
+        font-family: "Work Sans", sans-serif;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: rem(8px);
+        align-self: start;
+
+        margin-bottom: rem(16px);
+
+        .calender-div,
+        .clock-div {
+          display: flex;
+          align-items: center;
+          gap: 1;
+        }
+
+        .calendar-icon,
+        .clock-icon {
+          height: rem(15px);
+          width: rem(15px);
+          margin-right: rem(5px);
+        }
+
+        .time,
+        .day {
+          font-size: rem(12px);
+          line-height: normal;
+          font-weight: normal;
+          color: $black;
+        }
+
+        .time-zone {
+          line-height: rem(16px);
+          line-height: rem(16px);
+          color: $dark-grey;
+        }
+      }
+      .biometrics-container {
+        margin-bottom: rem(16px);
+        .biometrics-icon {
+          margin-right: rem(10px);
+        }
+        .biometrics-title {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          font-size: rem(12px);
+          line-height: rem(14px);
+          color: $black;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    gap: rem(12px);
+    flex-direction: column;
+    button {
+      width: inherit;
+    }
+  }
+
+  .material-container {
+    width: 100%;
+
+    .material-pill {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+
+      .material-div {
+        flex: 1;
+
+        .materials {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: rem(18px) rem(67px) rem(9px);
+          gap: rem(6px);
+
+          .material-label {
+            font-size: rem(12px);
+            color: $dark-shade-grey;
+            opacity: 0.7;
+            margin-top: rem(6px);
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    .heading {
+      text-transform: uppercase;
+      font-size: rem(14px);
+      font-weight: 500;
+      margin: rem(32px) rem(0px) rem(14px) rem(0px);
+      line-height: normal;
+      color: $dark-shade-grey;
+    }
+
+    .materials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0.8rem 1.8rem 0.5625rem;
+      gap: rem(6px);
+    }
+  }
+
+  .description-container {
+    margin-top: rem(32px);
+    width: 100%;
+
+    .title {
+      text-transform: uppercase;
+      font-size: rem(14px);
+      font-weight: 500;
+      line-height: normal;
+      color: $dark-shade-grey;
+      margin-bottom: rem(14px);
+    }
+
+    .description {
+      font-size: rem(16px);
+      font-weight: normal;
+      line-height: 1.63;
+      color: $black;
+    }
+  }
+
+  .expert-container {
+    width: 100%;
+    margin-top: rem(36px);
+
+    .expert-header {
+      display: flex;
+      gap: rem(8px);
+      margin-bottom: rem(11px);
+
+      .icon {
+        width: rem(18px);
+        height: rem(18px);
+      }
+
+      .title {
+        text-transform: uppercase;
+        font-size: rem(16px);
+        font-weight: 500;
+        line-height: normal;
+        color: $black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .details-container {
+    .header {
+      flex-direction: column;
+      .title-container {
+        width: 100% !important;
+      }
+      .time-container {
+        margin-top: rem(6px);
+      }
+    }
+  }
+}

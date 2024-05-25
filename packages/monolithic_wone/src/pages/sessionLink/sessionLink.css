@@ -1,0 +1,100 @@
+.session-link-loader {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../Assets/images/sessionLink/woe_line1.svg"),
+    url("../../Assets/images/sessionLink/woe_mountain.svg"),
+    url("../../Assets/images/sessionLink/woe_line4.svg"),
+    url("../../Assets/images/sessionLink/woe_circle1.svg"),
+    url("../../Assets/images/sessionLink/woe_line3.svg"),
+    url("../../Assets/images/sessionLink/woe_circle3.svg");
+  background-position: 98% 10px, right top, left bottom, left bottom, 100% 98%,
+    92% 94%;
+  background-repeat: no-repeat;
+}
+
+.session-link-loader .loading-title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 140%;
+  /* identical to box height, or 31px */
+
+  text-align: center;
+
+  /* Bunting */
+
+  color: #16294c;
+}
+
+.avatar-container {
+  padding-top: 2.5rem;
+  background-image: url("../../Assets/images/sessionLink/woe_circle4.svg"),
+    url("../../Assets/images/sessionLink/woe_circle3.svg"),
+    url("../../Assets/images/sessionLink/woe_line3.svg");
+  background-repeat: no-repeat;
+  background-position: 60% 0, 100px 27px, 124px 5px;
+}
+
+.animate-container {
+  min-height: 112px;
+}
+
+.animate-container p {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 22px;
+  text-align: center;
+  color: #5c686d;
+  margin: 0.8rem 0;
+
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animate-container p.active {
+  color: #152a4a;
+  font-weight: 600;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .session-link-loader .loading-title {
+    font-size: 0.9rem;
+  }
+  .animate-container p {
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,32 @@
+canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+.overlay {
+  z-index: -9998;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  min-height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(255 255 255 / 0%) 0,
+    rgb(255 255 255 / 50%) 270px,
+    rgb(255 255 255) 398px
+  );
+}
+.removeOverlay {
+  z-index: -9998;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  min-height: 100%;
+}

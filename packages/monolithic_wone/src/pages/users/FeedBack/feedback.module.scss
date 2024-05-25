@@ -1,0 +1,131 @@
+@import "styles/colors.scss";
+@import "styles/global.scss";
+
+.feedback-begin-session {
+  max-width: 740px;
+  height: 98vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .main-container {
+    margin-top: rem(60px);
+    .feedback-container {
+      border-radius: rem(20px);
+      box-shadow: rem(0) rem(6px) rem(12px) rem(0) rgb(33 33 33 / 10%);
+      background-color: rgba(255, 255, 255, 0.85);
+      display: flex;
+      flex-direction: column;
+      padding: rem(30px) rem(20px) rem(20px) rem(20px);
+      margin-top: rem(30px);
+      .feedback-profile-data {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(20px);
+        .profile-thumb {
+          width: rem(30px);
+          min-width: rem(30px);
+          height: rem(30px);
+          img {
+            border-radius: 50%;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+        .profile-desc {
+          h6 {
+            font-family: "Work Sans", sans-serif;
+            font-size: rem(12px);
+            font-weight: 500;
+            line-height: rem(26px);
+            color: $black;
+            padding: 0 0 0 rem(6px);
+          }
+        }
+      }
+      p {
+        font-size: rem(16px);
+        line-height: rem(26px);
+        color: $black;
+      }
+    }
+    .stress-container {
+      margin-top: rem(49px);
+      .stress-state {
+        .stress-state-label {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: rem(13px);
+          span {
+            font-family: "Work Sans", sans-serif;
+            font-size: rem(16px);
+            font-weight: 500;
+            line-height: rem(26px);
+            color: $black;
+            text-transform: uppercase;
+            padding: 0 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .biometrics-button-container {
+    .session-biometric {
+      border-radius: rem(20px);
+      border: 1px solid $dark-shade-grey;
+      display: flex;
+      flex-direction: column;
+      padding: rem(15px) rem(20px);
+      margin-top: rem(30px);
+      .biometric-header {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: rem(10px);
+        // margin-bottom: rem(20px);
+
+        .icon {
+          flex-grow: 0;
+        }
+
+        .label {
+          flex-grow: 0;
+          width: max-content;
+          margin: 0;
+          font-family: "Work Sans", sans-serif;
+          font-size: rem(12px);
+          font-weight: 500;
+          line-height: rem(26px);
+          color: $dark-shade-grey;
+          text-transform: uppercase;
+        }
+      }
+      p {
+        font-size: rem(12px);
+        font-weight: 500;
+        line-height: rem(20px);
+        color: $black;
+        margin: 0;
+      }
+    }
+    .button-container {
+      margin: rem(30px) rem(0);
+    }
+  }
+}
+
+.feedback-form-input {
+  font-size: rem(14px) !important;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: $dark-shade-grey !important;
+  border: 1px solid $black;
+  padding: rem(28px) rem(15px) rem(15px) rem(13px) !important;
+}
+
+.feedback-form-label {
+  left: 0px !important;
+}

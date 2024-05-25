@@ -1,0 +1,137 @@
+@import "styles/global.scss";
+
+.card-container {
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+
+  .time-container {
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: rem(8px);
+    align-items: center;
+    gap: rem(8px);
+    .calendar-icon {
+      height: rem(20px);
+      width: rem(20px);
+    }
+    .clock-icon {
+      height: rem(20px);
+      width: rem(20px);
+    }
+    .time,
+    .day {
+      font-size: rem(16px);
+      line-height: rem(16px);
+      color: $black;
+    }
+
+    .time-zone {
+      line-height: rem(16px);
+      line-height: rem(16px);
+      color: $dark-grey;
+    }
+  }
+
+  .card {
+    // height: rem(259px);
+    border-radius: rem(20px);
+    box-shadow: rem(0px) rem(12px) rem(24px) rem(0px) rgba(33, 33, 33, 0.13);
+    .video-camera-icon {
+      height: rem(18px);
+      width: rem(26px);
+      position: absolute;
+      right: rem(13px);
+      top: rem(13px);
+    }
+    .img {
+      object-fit: cover;
+      // height: rem(179px);
+      border-top-left-radius: rem(20px);
+      border-top-right-radius: rem(20px);
+    }
+    .card-top {
+      position: relative;
+      .pills-container {
+        display: flex;
+        gap: rem(5px);
+        position: absolute;
+        right: rem(13px);
+        bottom: rem(13px);
+      }
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: rem(12px);
+      .title-arrow-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .detail-icon {
+          line-height: 1.44;
+        }
+      }
+      .subtitle-duration-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        color: $dark-shade-grey;
+        .duration {
+          font-size: rem(12px);
+          font-weight: normal;
+          line-height: 1.63;
+        }
+      }
+    }
+
+    .title {
+      font-size: rem(18px);
+      line-height: 1.44;
+      margin-bottom: 0;
+      font-weight: 500;
+      color: $black;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .subtitle {
+      font-size: rem(16px);
+      line-height: 1.63;
+      font-weight: normal;
+      margin-top: 0;
+      color: $black;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.large {
+  width: rem(358px);
+}
+
+.small {
+  width: rem(300px);
+}
+
+.mini {
+  width: rem(171px) !important;
+
+  .card {
+    height: rem(160px) !important;
+
+    .img {
+      height: rem(80px) !important;
+    }
+  }
+}

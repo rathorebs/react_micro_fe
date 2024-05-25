@@ -1,0 +1,42 @@
+.favourite-btn-container {
+  border: 1px solid #ed6b64;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  width: 140px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  span {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #ed6b64;
+    @media screen and (max-width: 768px) {
+      font-size: 0.7rem;
+    }
+    img {
+      margin-right: 0.5rem;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.active-status {
+    background-color: #ed6b64;
+    span {
+      color: #fff;
+    }
+    img {
+      margin-right: 0.5rem;
+      width: 19px;
+      height: 19px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 104px;
+    height: 32px;
+  }
+}

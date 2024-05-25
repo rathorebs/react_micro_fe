@@ -1,0 +1,55 @@
+.removeAdmin-form {
+  background: #fafafc;
+  position: absolute;
+  top: -0.8rem;
+  right: 0px;
+  opacity: 1;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px !important;
+  width: 220px;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+}
+.remove-admin-btn {
+  background: #ed6b64 !important;
+  color: #fff !important;
+  border: 1px solid #ed6b64 !important;
+}
+
+.removeAdmin-form-button {
+  outline: none;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #ed6b64;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border: none;
+  cursor: pointer;
+  width: auto !important;
+  padding: 5px 10px !important;
+  margin-top: 0px !important;
+}
+
+/* .removeEmployee-form-div {
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+} */
+
+.removeCircle-img {
+  padding-right: 0.5rem;
+}

@@ -1,0 +1,76 @@
+.removeEmployee-form {
+  background: #fafafc;
+  /* position: absolute; */
+  top: 0.5rem;
+  right: 0px;
+  opacity: 1;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popover_body {
+  padding: 8px;
+}
+
+.popover_container {
+  position: absolute;
+  will-change: transform;
+  top: 0px;
+  left: 66px;
+  transform: translate3d(943px, 346px, 0px);
+  border: none;
+  border-radius: 0;
+}
+
+.removeEmployee-form-button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.resend-invite-form-button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+  border-bottom: 1px solid #f3f3f2 !important;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.removeEmployee-form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: none;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  padding: 10px 10px;
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: -30px;
+  z-index: 5;
+  /* padding: 0.5rem 0.75rem; */
+}
+
+.removeCircle-img {
+  padding-right: 0.5rem;
+}

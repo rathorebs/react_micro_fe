@@ -1,0 +1,40 @@
+@import "styles/global.scss";
+
+.index-container {
+  position: relative;
+  .index-score-medium {
+    font-family: "Bitter", serif;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $white;
+    font-size: rem(62px);
+    display: inline-block;
+  }
+  .index-score-big {
+    @extend .index-score-medium;
+    color: $dark-shade-grey;
+    font-size: rem(124px);
+  }
+
+  .index-score-small {
+    @extend .index-score-big;
+    font-size: rem(35px);
+  }
+
+  .index-arrow-big {
+    display: inline-block;
+    position: absolute;
+    top: rem(29px);
+  }
+  .index-arrow-medium {
+    @extend .index-arrow-big;
+    top: rem(13px);
+  }
+  .index-arrow-small {
+    @extend .index-arrow-big;
+    top: rem(6px);
+  }
+}

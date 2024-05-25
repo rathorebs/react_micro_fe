@@ -1,0 +1,78 @@
+.employee-status p {
+  line-height: 1;
+}
+
+.monthly-yearly-box select {
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  outline: none;
+  border: none;
+  padding: 0.25rem;
+  width: 154px;
+  height: 35px;
+  border-radius: 0.2rem;
+  font-family: "Poppins";
+  color: #5d686e;
+  font-size: 0.8rem;
+  font-weight: 300;
+  appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+}
+
+.monthly-yearly-box:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  right: 0.4rem;
+  color: #5582a7;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.horizontal-bar {
+  max-height: calc(100% - 80px);
+  overflow-y: auto;
+  border-bottom: 1px solid #f3f3f2;
+}
+
+#chartjs-tooltip,
+#chartjs-tooltip-2 {
+  position: relative;
+  border-radius: 0.2rem;
+}
+
+#chartjs-tooltip:before,
+#chartjs-tooltip-2:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+
+  border: 0.25rem solid transparent;
+  border-top: 0;
+  border-bottom: 8px solid #f3f3f2;
+  left: 50%;
+  top: -0.4rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+#chartjs-tooltip-2.left:before {
+  left: 0.25rem;
+  transform: translateX(0) rotate(180deg);
+  -webkit-transform: translateX(0) rotate(180deg);
+  bottom: -0.4rem;
+  top: auto;
+  border-bottom-color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+  .horizontal-bar {
+    min-height: 232px;
+  }
+}
+

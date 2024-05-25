@@ -1,0 +1,547 @@
+@import "styles/global.scss";
+
+.settings-navigation {
+  width: rem(367px);
+  padding: rem(66px) rem(57px) rem(66px) rem(47px);
+  box-shadow: 0 12px 24px 0 rgba(33, 33, 33, 0.13);
+  min-height: 100vh;
+  .back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 8px;
+      height: 14px;
+    }
+    p {
+      font-size: rem(14px);
+      text-transform: uppercase;
+      margin: 0 0 0 rem(15px);
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+  .main-container {
+    margin-top: rem(45px);
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(10px);
+      p {
+        font-size: rem(14px);
+        text-transform: uppercase;
+        margin: 0 0 0 rem(8px);
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        color: $black;
+      }
+    }
+  }
+  .navigation-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(10px);
+    justify-content: space-between;
+    border-radius: rem(20px);
+    box-shadow: 0 6px 12px 0 rgba(33, 33, 33, 0.1);
+    padding: rem(21px) rem(24px) rem(18px) rem(24px);
+    cursor: pointer;
+    p {
+      margin: 0;
+      font-size: rem(16px);
+      text-transform: uppercase;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      color: black;
+    }
+    img {
+      transform: rotate(180deg);
+      width: rem(8px);
+      height: rem(14px);
+      margin-left: rem(10px);
+    }
+  }
+
+  .navigation-button-active {
+    @extend .navigation-button;
+    border: 1px solid $energy-blue;
+  }
+}
+
+.settings-navigation-detail {
+  width: rem(740px);
+  padding: rem(63px) rem(16px) rem(52px) rem(57px);
+}
+
+.edit-profile {
+  .fields {
+    width: rem(360px);
+    .profile-image {
+      position: relative;
+      width: rem(360px);
+      height: rem(277px);
+      margin-bottom: rem(28px);
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+      img {
+        border-radius: rem(10px);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .defaultImage {
+        object-fit: contain;
+      }
+    }
+    .edit-profile-input {
+      font-size: rem(14px);
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      color: $dark-shade-grey !important;
+      border: 1px solid $black;
+      padding: rem(28px) rem(15px) rem(15px) rem(13px);
+    }
+    .edit-profile-input-firstname {
+      @extend .edit-profile-input;
+      text-transform: capitalize;
+    }
+    .edit-profile-label {
+      left: 0px;
+    }
+  }
+  .detail-title {
+    font-size: rem(14px);
+    text-transform: uppercase;
+    margin: 0 0 rem(33px) 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: $dark-shade-grey;
+  }
+  .save-button {
+    margin-top: rem(116px);
+  }
+}
+
+.change-password {
+  width: rem(360px);
+  h1 {
+    margin-bottom: rem(47px);
+    font-size: rem(14px);
+    text-transform: uppercase;
+    margin: 0 0 rem(33px) 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: $dark-shade-grey;
+  }
+  .custom-password {
+    border: 1px solid #000;
+  }
+  button {
+    margin-top: rem(50px);
+  }
+  .error-message {
+    font-size: rem(12px);
+    color: #000;
+  }
+}
+
+.notifications {
+  width: rem(360px);
+  .notifications-title {
+    font-size: rem(14px);
+    text-transform: uppercase;
+    margin: 0 0 rem(33px) 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: $dark-shade-grey;
+  }
+}
+
+.calendar {
+  width: rem(360px);
+  .calendar-title {
+    font-size: rem(14px);
+    text-transform: uppercase;
+    margin: 0 0 rem(33px) 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: $dark-shade-grey;
+  }
+}
+
+.settings-membership {
+  @extend .change-password;
+  .membership-logo {
+    display: block;
+  }
+
+  h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: rem(20px);
+    color: $black;
+    margin-top: rem(35px);
+  }
+  h3 {
+    color: $black;
+    font-size: rem(20px);
+    margin-top: rem(15px);
+    margin-bottom: rem(30px);
+    text-transform: none;
+  }
+  .membership-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 20px;
+    .membership-thumb {
+      padding-right: rem(12px);
+      text-align: left;
+    }
+    .membership-name-desc {
+      padding: 0 0;
+      h6 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: rem(12px);
+        color: $dark-shade-grey;
+      }
+      p {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: rem(12px);
+        color: $black;
+      }
+    }
+  }
+}
+
+.settings-our-mission {
+  @extend .settings-membership;
+  .our-mission-thumb {
+    border-radius: rem(20px);
+    overflow: hidden;
+    margin-top: rem(20px);
+  }
+  .mission-contents {
+    margin-top: rem(30px);
+    p {
+      font-size: rem(16px);
+      color: $black;
+    }
+  }
+}
+
+.error-message {
+  font-size: rem(14px);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: $red;
+}
+
+.manage-devices {
+  .title {
+    font-size: rem(14px);
+    text-transform: uppercase;
+    margin: 0 0 rem(33px) 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: $dark-shade-grey;
+  }
+  .device-container {
+    width: rem(360px);
+    min-height: 62vh;
+  }
+  .no-device-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62vh;
+  }
+  @media screen and (min-width: 1850px) {
+    .device-container,
+    .no-device-container {
+      min-height: rem(650px);
+      height: auto;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(10px);
+    justify-content: space-between;
+    border-radius: rem(20px);
+    box-shadow: 0 6px 12px 0 rgba(33, 33, 33, 0.1);
+    padding: rem(28px) rem(23px) rem(28px) rem(23px);
+    p {
+      margin: 0;
+      font-size: rem(16px);
+      text-transform: uppercase;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      color: black;
+    }
+    .button-remove {
+      font-size: rem(12px);
+      margin-left: rem(10px);
+      padding: 0 0 rem(5px) 0;
+    }
+  }
+  .no-device {
+    width: rem(280px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: rem(12px);
+      opacity: 0.7;
+      color: $black;
+      margin-top: rem(18px);
+      line-height: rem(18px);
+      text-align: center;
+    }
+  }
+  .footer-buttons {
+    margin-top: rem(50px);
+    .source-device {
+      width: 100%;
+    }
+    .delete-button {
+      font-size: rem(12px);
+      width: 100%;
+    }
+  }
+}
+
+.manage-devices-modal {
+  .manage-devices-modal-content {
+    padding: rem(14px) rem(14px) rem(0px) rem(14px);
+    border: 0;
+    border-radius: rem(20px);
+    .title {
+      font-size: rem(20px);
+    }
+    .subtitle {
+      opacity: 0.7;
+      font-size: rem(12px);
+      width: rem(280px);
+      margin: 0;
+      line-height: rem(20px);
+    }
+    .error-div {
+      word-break: break-all;
+      padding: rem(0px) rem(14px) rem(0px) rem(14px);
+    }
+  }
+  .footer {
+    border: 0;
+    padding: rem(0) rem(16px);
+    .confirm-button {
+      width: 100%;
+      margin: 0;
+    }
+    .cancel-button {
+      width: 100%;
+      font-size: rem(12px);
+    }
+  }
+}
+
+.how-it-works {
+  max-width: rem(740px);
+  .title {
+    font-size: rem(14px);
+    text-transform: uppercase;
+    margin: 0 0 rem(33px) 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: $black;
+  }
+  .content {
+    .header {
+      .heading {
+        font-size: rem(40px);
+        text-transform: uppercase;
+        margin: 0 0 rem(12px) 0;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        color: $black;
+      }
+      .sub-heading {
+        font-size: rem(16px);
+        margin: 0 0 rem(19px) 0;
+        font-weight: 400;
+        color: $black;
+        line-height: rem(26px);
+      }
+    }
+    .connect-button {
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: rem(15px);
+        p {
+          font-size: rem(12px);
+          text-transform: uppercase;
+          margin: rem(6px) 0 0 0;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 500;
+          color: $black;
+        }
+      }
+    }
+    .sections {
+      .sections-item {
+        margin: rem(48px) 0 0 0;
+      }
+      .title {
+        margin: 0;
+        font-size: rem(26px);
+        text-transform: uppercase;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        color: $black;
+      }
+      .accordion-main > div {
+        border-bottom: 1px solid #dee2e6;
+      }
+      .accordion-header {
+        button {
+          font-size: rem(16px);
+          text-transform: uppercase;
+          padding-left: rem(0);
+          font-family: "Work Sans", sans-serif;
+          font-weight: 500;
+          color: $black;
+          background: none;
+        }
+        button:focus {
+          box-shadow: none;
+        }
+        button:not(.collapsed) {
+          box-shadow: none;
+        }
+        button:not(.collapsed)::after {
+          background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;%7D .st1%7Bfill:none;stroke:%23323232;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;%7D%0A%3C/style%3E%3Cg%3E%3Cpath class='st0' d='M24,0L0,0l0,24l24,0L24,0z'/%3E%3Cpath class='st1' d='M16,10l-4,4l-4-4'/%3E%3C/g%3E%3C/svg%3E%0A");
+        }
+      }
+      .accordion-content {
+        div {
+          padding-left: rem(0);
+          color: $black;
+          padding-bottom: 0;
+          padding-top: 0;
+          p {
+            font-weight: 400;
+            line-height: rem(22px);
+            font-size: rem(16px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.biometrics-modal {
+  .biometrics-modal-content {
+    background-image: url("/Assets/biometric-connection-background.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: rem(10px);
+    border: 0;
+    border-radius: rem(20px);
+    .header {
+      border: 0;
+      button {
+        background-size: auto 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("/Assets/icon/icon_close.svg");
+        opacity: 1;
+      }
+      button:focus {
+        box-shadow: none;
+      }
+    }
+    .content {
+      padding: rem(16px) rem(24px);
+      display: flex;
+      .mobile-devices {
+        img {
+          width: 100%;
+        }
+      }
+      .qr-content {
+        margin: rem(30px) 0 0 rem(30px);
+        .title {
+          font-size: rem(40px);
+          text-transform: uppercase;
+          margin: rem(15px) 0 rem(13px) 0;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          color: $black;
+        }
+        .sub-title {
+          font-size: rem(16px);
+          text-transform: uppercase;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 500;
+          color: $black;
+          margin-bottom: rem(13px);
+        }
+        .sub-content {
+          font-size: rem(16px);
+          line-height: rem(24px);
+          color: $black;
+          margin-bottom: rem(13px);
+        }
+        .sub-content-mini {
+          font-size: rem(12px);
+          line-height: rem(20px);
+          color: $black;
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .content {
+        flex-direction: column;
+        .qr-content {
+          margin-left: 0;
+        }
+      }
+    }
+    .modal-footer {
+      border: 0;
+      padding: rem(16px) rem(40px);
+
+      .footer {
+        .title {
+          font-size: rem(12px);
+          text-transform: uppercase;
+          margin: rem(8px) 0;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 500;
+          color: $black;
+        }
+        .sub-title {
+          font-size: rem(12px);
+          line-height: rem(20px);
+          color: $black;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

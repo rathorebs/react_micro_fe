@@ -1,0 +1,227 @@
+.upload-csv-conatiner {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  right: 0;
+  top: 0;
+  font-family: Poppins;
+}
+
+.upload-csv-form {
+  padding: 2.25rem 1.75rem;
+  width: 100%;
+  height: 474px;
+  /* height: fit-content; */
+  background: #fafafc;
+  box-shadow: 0px -4px 24px -5px rgba(22, 41, 76, 0.1);
+  border-radius: 0.2rem 0.2rem 0 0;
+
+  opacity: 1;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upload-csv-form h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: #16294c;
+  align-self: center;
+}
+
+.upload-csv-wrapper p {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  align-self: center;
+  padding: 0.4rem 0;
+  margin-bottom: 0;
+}
+
+.upload-csv-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload-csv-email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.upload-csv-wrapper input {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 140%;
+  color: #5d686e;
+  background: #ffffff;
+  border: 1px solid #f3f3f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.4rem;
+}
+
+.upload-csv-wrapper label {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  padding: 0.35rem 0;
+}
+
+.upload-csv {
+  padding: 0 0.5rem;
+}
+
+.upload-csv :link {
+  text-decoration: none;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #5582a7;
+}
+
+.upload-csv-addbtn {
+  font-family: Sofia Pro;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  background: #5582a7;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.upload-csv-cancelbtn {
+  font-family: Sofia Pro;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
+  color: #5582a7;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0;
+  background-color: transparent;
+}
+
+.upload-csv-fname,
+.upload-csv-lname {
+  display: flex;
+  flex-direction: column;
+  width: 144px;
+}
+
+.drag-drop-box {
+  width: 100%;
+  height: 159px;
+  align-items: center;
+  display: flex;
+  border: 0.1rem dashed #5582a7;
+  justify-content: center;
+  flex-direction: column;
+  /* flex-basis: 100%; */
+}
+
+.drag-box-text1 {
+  margin-bottom: 0.2rem;
+}
+
+.drag-box-text2 {
+  color: #6b91b2;
+  cursor: pointer;
+}
+
+.select-text {
+  color: #6b91b2;
+  cursor: pointer;
+}
+
+.selected-files-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  max-height: 5.2rem;
+  overflow-y: auto;
+}
+
+.selected-files {
+  flex-basis: auto;
+}
+
+.selected-file {
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0.25rem 0.75rem 0.25rem;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.file-drop {
+  /* relatively position the container bc the contents are absolute */
+  position: relative;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.fontawesome-icon {
+  color: red;
+}
+Button :disabled {
+  cursor: not-allowed;
+}
+.file-error-msg {
+  color: red;
+  font-size: 0.7rem;
+}
+.file-success-msg {
+  color: green;
+  font-size: 0.7rem;
+}
+
+.success-error-msg-block {
+  flex-basis: auto;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .upload-csv-form {
+    padding: 0.75rem;
+  }
+}

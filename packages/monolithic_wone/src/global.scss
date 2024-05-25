@@ -1,0 +1,180 @@
+@import "custom";
+@import "variables";
+
+.PrimaryButton {
+  width: 100%;
+  height: 2.4rem;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
+  color: $white-color;
+  background: $burnt-sienna-color;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 0;
+}
+
+.SecondaryButton {
+  @extend .PrimaryButton;
+  background: $wedgewood-color;
+}
+
+.TextField {
+  width: 100%;
+  border: 1px solid $desert-storm-color;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px $box-shadow-color;
+  border-radius: 0.2rem;
+  padding: 0.6rem;
+  color: $bunting-color;
+  background: $white-color;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 0.8rem;
+  outline: 0;
+  height: 2.2rem;
+  resize: none;
+}
+
+.Message {
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 0.7rem;
+  line-height: 140%;
+  border-radius: 0.5rem;
+  padding: 0.8rem 0.8rem;
+  text-align: left;
+}
+
+.InfoMessage {
+  @extend .Message;
+  background-color: $polar-color;
+}
+
+.ErrorMessage {
+  @extend .Message;
+  color: $bunting-color;
+  background-color: $albescent-color;
+}
+
+.form-check-input {
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border-width: 0;
+  }
+
+  &:checked[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: $wedgewood-color;
+    background-image: none;
+    /* Not removed via appearance */
+    font: inherit;
+    color: currentColor;
+    width: 0.92rem;
+    height: 0.92rem;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    -webkit-transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+  }
+
+  &[type="checkbox"] {
+    cursor: pointer;
+    border: 1px solid $nevada-color;
+    border-radius: 0.2rem;
+    background-color: $white-color;
+
+    &:before {
+      content: "";
+      width: 0.52rem;
+      height: 0.52rem;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      transform: scale(0);
+      -webkit-transform: scale(0);
+      transform-origin: bottom left;
+      -webkit-transform-origin: bottom left;
+      transition: 120ms transform ease-in-out;
+      -webkit-transition: 120ms transform ease-in-out;
+      box-shadow: inset 0.8rem 0.8rem $white-color;
+      /* Windows High Contrast Mode */
+      background-color: $wedgewood-color;
+    }
+
+    &:checked::before {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+    }
+  }
+}
+
+.white-box {
+  background: $white-color;
+  box-shadow: 0px 4px 24px $box-shadow-color;
+  padding: 1.2rem 1.2rem;
+  box-sizing: border-box;
+}
+
+.form-floating {
+  label {
+    font-family: "Work Sans", sans-serif !important;
+    font-weight: 500;
+    position: absolute;
+    top: 5px;
+    left: 32px;
+    width: 100%;
+    height: 100%;
+    padding: rem(15px) rem(15px) rem(15px) rem(45px);
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    color: #000;
+    opacity: 0.6;
+  }
+}
+// input-range start here
+.input-range__track--active,
+.input-range__slider {
+  background: #bf3c57 !important;
+  border-color: #bf3c57 !important;
+}
+
+.input-range__slider {
+  height: 32px !important;
+  width: 32px !important;
+  margin-top: -21px !important;
+  color: #ffffff !important;
+  background: #ffffff !important;
+  border: #ffffff !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.29) !important;
+}
+
+.input-range__slider:active {
+  transform: none !important;
+}
+
+.input-range__track {
+  height: 10px !important;
+}
+
+.input-range__track--background {
+  background: #ffffff !important;
+}
+
+// input-range end here

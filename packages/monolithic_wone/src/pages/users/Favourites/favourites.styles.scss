@@ -1,0 +1,40 @@
+.favourites-container {
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-right: 0%;
+  }
+  h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #16294c;
+  }
+
+  .favourites-tabs {
+    margin-top: 1rem;
+    a {
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.8rem;
+      align-items: center;
+      color: #5d686e;
+      border: 0.1rem solid #5d686e;
+      box-sizing: border-box;
+      border-radius: 1.5rem;
+      margin-right: 0.5rem;
+      padding: 0.45rem 0.75rem;
+      display: inline-block;
+      &.active-tab {
+        background: #ed6b64;
+        border: 0.1rem solid #ed6b64;
+        color: #ffffff;
+      }
+    }
+  }
+  .favourites-body-container {
+    margin-top: 0.75rem;
+  }
+}

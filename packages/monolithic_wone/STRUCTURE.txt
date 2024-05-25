@@ -1,0 +1,256 @@
+=========================================================================================================
+# Pathnames, files, and dependencies
+=========================================================================================================
+
+=========================================================================================================
+## Component - Session Details
+=========================================================================================================
+
+/src/apps/user/learner/components/session-details.tsx
+/src/apps/user/learner/components/session-details.module.scss
+
+=========================================================================================================
+## Component - Expert Details
+=========================================================================================================
+
+/src/apps/user/learner/components/expert-details.tsx
+/src/apps/user/learner/components/expert-details.module.scss
+
+=========================================================================================================
+## 000 - Sign In
+=========================================================================================================
+
+/src/styles/colors.scss
+
+/src/assets/images/logo.svg
+/src/assets/fonts/theinhardt-pan.ttf
+/src/assets/fonts/theinhardt-pan.woff
+/src/assets/fonts/reckless-neue.ttf
+/src/assets/fonts/reckless-neue.woff
+
+/src/components/pattern/index.jsx
+/src/components/pattern/styles.jsx
+/src/components/pattern/src/... <- WONE Generator
+
+/src/components/fields/index.jsx
+/src/components/fields/styles.jsx
+/src/components/fields/email.jsx
+/src/components/fields/password.jsx
+
+/src/components/buttons/index.tsx
+/src/components/buttons/styles.module.scss
+/src/components/buttons/primary.tsx
+/src/components/buttons/secondary.tsx
+
+/src/apps/user/common/pages/sign-in.tsx
+/src/apps/user/common/pages/sign-in.module.scss
+
+=========================================================================================================
+## 100 - Register
+=========================================================================================================
+
+/src/styles/colors.scss
+/src/styles/typography.scss
+
+/src/assets/images/logo.svg
+/src/assets/fonts/theinhardt-pan.ttf
+/src/assets/fonts/theinhardt-pan.woff
+/src/assets/fonts/reckless-neue.ttf
+/src/assets/fonts/reckless-neue.woff
+/src/assets/fonts/icons.ttf
+
+/src/components/pattern/index.tsx
+/src/components/pattern/styles.tsx
+/src/components/pattern/src/... <- WONE Generator
+
+/src/components/progress/index.tsx
+/src/components/progress/components/linear-progress.tsx
+/src/components/progress/components/linear-progress.module.scss
+/src/components/progress/components/circular-progress.tsx
+/src/components/progress/components/circular-progress.module.scss
+
+import { LinearProgress, CircularProgress } from "components/prgoress"
+
+/src/components/fields/index.tsx
+/src/components/fields/styles.tsx
+/src/components/fields/email.tsx
+/src/components/fields/password.tsx
+/src/components/fields/select.tsx
+/src/components/fields/multi-select.tsx
+
+/src/components/buttons/index.tsx
+/src/components/buttons/styles.module.scss
+/src/components/buttons/primary.tsx
+/src/components/buttons/secondary.tsx
+
+/src/apps/user/pages/register/index.tsx
+/src/apps/user/pages/register/pages/get-started.tsx # 101, 102, 103
+/src/apps/user/pages/register/pages/styles.module.scss
+/src/apps/user/pages/register/pages/register/index.tsx
+/src/apps/user/pages/register/pages/register/styles.module.scss
+/src/apps/user/pages/register/pages/register/components/intro-screen.tsx # 105
+/src/apps/user/pages/register/pages/register/components/multiple-inputs-screen.tsx # 106
+/src/apps/user/pages/register/pages/register/components/single-input-screen.tsx # 107, 108, 109, 110, 111
+/src/apps/user/pages/register/pages/register/components/animation-screen.tsx # 112, 113
+/src/apps/user/pages/register/pages/register/components/styles.module.scss
+/src/apps/user/pages/register/pages/welcome.tsx # 114
+
+=========================================================================================================
+## 200 - Sessions
+=========================================================================================================
+
+/src/components/buttons/index.tsx
+/src/components/buttons/styles.module.scss
+/src/components/buttons/primary.tsx
+/src/components/buttons/secondary.tsx
+
+/src/components/layout/index.tsx
+/src/components/layout/components/sidebar.tsx
+/src/components/layout/components/content.tsx
+/src/components/layout/components/drawer.tsx
+
+/src/components/filter.tsx
+/src/components/filter.module.scss
+
+/src/components/pill/index.tsx
+/src/components/pill/styles.module.scss
+/src/components/pill/pillar.tsx
+/src/components/pill/class.tsx
+
+# import { PillarPill, ClassPill } from "components/pill"
+# 
+# const PillarsExample = () => {
+#   return (
+#     <> 
+#      <PillarPill pillar="Energy"/>
+#      <ClassPill calss="Yoga"/>
+#     </>
+#   );
+# }
+
+/src/apps/user/learner/components/session-details.tsx
+/src/apps/user/learner/components/session-details.module.scss
+/src/apps/user/learner/components/expert-details.tsx
+/src/apps/user/learner/components/expert-details.module.scss
+
+/src/apps/user/learner/pages/sessions/index.tsx
+/src/apps/user/learner/pages/sessions/index.module.scss
+/src/apps/user/learner/pages/sessions/components/session-card.tsx
+/src/apps/user/learner/pages/sessions/components/session-card.module.scss
+
+
+=========================================================================================================
+## 300 - My Schedule
+=========================================================================================================
+
+
+/src/apps/user/learner/components/session-card.tsx
+/src/apps/user/learner/components/session-card.module.scss
+/src/apps/user/learner/components/session-details.tsx
+/src/apps/user/learner/components/session-details.module.scss
+/src/apps/user/learner/components/expert-details.tsx
+/src/apps/user/learner/components/expert-details.module.scss
+
+/src/apps/user/learner/pages/my-schedule/index.tsx
+/src/apps/user/learner/pages/my-schedule/index.module.scss
+
+=========================================================================================================
+## Suggestion to add app disambiguation:
+=========================================================================================================
+
+/src/apps/company/                  <- https://company.walkingonearth.com
+/src/apps/user/pages/learner/       <- https://user.walkingonearth.com (logged in as a Learner)
+/src/apps/user/pages/practitioner/  <- https://user.walkingonearth.com (logged in as a Practitioner)
+/src/apps/live/                     <- https://user.walkingonearth.com/live/ (zoom-meetingssdk-app)
+
+=========================================================================================================
+## Common
+=========================================================================================================
+
+/src/graphql/queries.ts
+/src/graphql/mutations.ts
+
+/src/utils/functions.ts
+/src/utils/analytics.ts
+/src/utils/constants.ts
+
+/src/contexts/auth.tsx
+/src/contexts/apollo-client.ts
+
+/src/hooks/use-auth.ts
+/src/hooks/use-in-view.ts
+
+/src/components/page/index.tsx
+/src/components/page/components/side-bar.tsx
+
+
+=========================================================================================================
+## Company Portal - company.walkingonearth.com
+=========================================================================================================
+
+/src/apps/company/index.tsx <- App.js
+/src/apps/company/pages/index.jsx <- routes
+/src/apps/company/pages/sign-in.tsx
+/src/apps/company/pages/sign-up.tsx
+/src/apps/company/pages/dashboard.tsx
+/src/apps/company/pages/subscription/index.tsx
+/src/apps/company/pages/subscription/styles.tsx
+/src/apps/company/pages/subscription/components/add-seats.tsx
+/src/apps/company/pages/subscription/components/remove-seats.tsx
+/src/apps/company/pages/subscription/components/styles.module.scss
+/src/apps/company/pages/members/index.tsx
+/src/apps/company/pages/members/styles.tsx
+/src/apps/company/pages/members/components/add-members.tsx
+/src/apps/company/pages/members/components/members-table.tsx
+/src/apps/company/pages/members/components/styles.module.scss
+/src/apps/company/pages/company-details/index.tsx
+/src/apps/company/pages/company-details/styles.module.scss
+/src/apps/company/pages/company-details/components/add-admin.tsx
+/src/apps/company/pages/company-details/components/add-admin.module.scss
+/src/apps/company/pages/company-details/components/add-location.tsx
+/src/apps/company/pages/company-details/components/add-location.module.scss
+/src/apps/company/pages/company-details/components/remove-admin.tsx
+/src/apps/company/pages/company-details/components/remove-admin.module.scss
+/src/apps/company/pages/admin-settings.tsx
+/src/apps/company/pages/admin-settings.module.scss
+
+=========================================================================================================
+## Learner/Practitioner Portal - user.walkingonearth.com
+=========================================================================================================
+
+/src/apps/user/components/sessions-list.tsx
+/src/apps/user/components/session-card.tsx
+/src/apps/user/components/session-details.tsx
+
+/src/apps/user/components/articles-list.tsx
+/src/apps/user/components/article-card.tsx
+/src/apps/user/components/article-details.tsx
+
+/src/apps/user/components/recordings-list.tsx
+/src/apps/user/components/recording-card.tsx
+/src/apps/user/components/recording-details.tsx
+
+/src/apps/user/index.tsx <- App.js
+
+/src/apps/user/pages/index.tsx <- routes
+
+/src/apps/user/pages/error-boundary.tsx
+/src/apps/user/pages/get-started.tsx
+/src/apps/user/pages/sign-in.tsx
+/src/apps/user/pages/sign-up.tsx
+/src/apps/user/pages/reset-password.tsx
+/src/apps/user/pages/create-password.tsx
+/src/apps/user/pages/onboard.tsx
+/src/apps/user/pages/sessionLink/index.tsx
+/src/apps/user/pages/sessionLink/styles.module.scss
+
+/src/apps/user/pages/learner/my-schedule.tsx
+/src/apps/user/pages/learner/sessions.tsx
+/src/apps/user/pages/learner/wone-index.tsx
+/src/apps/user/pages/learner/articles.tsx
+/src/apps/user/pages/learner/recordings.tsx
+/src/apps/user/pages/learner/favourites.tsx
+/src/apps/user/pages/learner/feedback.tsx
+
+/src/apps/user/pages/practitioner/sessions.tsx
+/src/apps/user/pages/practitioner/my-schedule.tsx

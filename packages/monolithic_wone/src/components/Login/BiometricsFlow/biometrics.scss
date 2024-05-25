@@ -1,0 +1,347 @@
+.biometrics-dialog {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 30px 20px;
+  top: 50%;
+  transform: translateY(-50%) !important;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100% !important;
+  }
+
+  .modal-content {
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    outline: 0;
+  }
+
+
+  h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: #16294c;
+    text-align: center;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    margin-bottom: 0;
+  }
+
+  h6 {
+    font-family: "Sofia Pro";
+    font-size: 15px;
+    color: #16294c;
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding: 10px 0 20px 0;
+  }
+
+  .error-message {
+    font-family: "Sofia Pro";
+    font-size: 13px;
+    color: #dc3545;
+    text-align: left;
+    padding: 5px 5px 5px 0px;
+    margin: 0 0;
+    font-weight: 100;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    margin: 47px 0 0 0;
+
+    .button {
+      font-family: "Sofia Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.8rem;
+      line-height: 140%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 0.2rem;
+      padding: 0.5rem 1.5rem;
+      margin: 0rem auto;
+      border: none;
+
+      &.dialog-biometric-primary {
+        background-color: #5582a7;
+      }
+
+      &.dialog-biometric-secondary {
+        background-color: #ed6b64;
+      }
+    }
+  }
+
+  .spinner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .custom-spinner {
+      position: absolute;
+      bottom: 35%;
+    }
+  }
+
+  .close-icon-container {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+
+  &.biometric-device-list {
+    max-height: 100vh;
+
+
+    .button {
+      width: 100%;
+    }
+
+    .device-list-container {
+
+      height: 30vh;
+      overflow: auto;
+
+      .biometric-device-form {
+        padding: 0 20px;
+      }
+
+      .biometric-device {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #5582a7;
+        padding: 15px 0 15px 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        position: relative;
+        cursor: pointer;
+
+        span {
+          font-family: "Sofia Pro";
+          font-size: 14px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #16294c;
+        }
+
+        input {
+          &.custom-input-radio {
+            float: none;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            opacity: 0;
+            cursor: pointer;
+            width: 22px;
+            height: 22px;
+
+            &~.checkmark {
+              position: absolute;
+              top: 10px;
+              right: 0;
+              border-radius: 50%;
+              width: 22px;
+              height: 22px;
+              border: 1px solid #5582a7;
+            }
+
+            &:checked~.checkmark {
+              position: absolute;
+              top: 10px;
+              right: 0;
+              width: 22px;
+              height: 22px;
+              background-image: url(../../../Assets/images/biometrics/checkmark.svg);
+              background-repeat: no-repeat;
+              background-size: 22px;
+              background-position: center center;
+              border: none;
+
+              &:after {
+                display: block;
+              }
+
+            }
+          }
+        }
+
+        &:hover {
+          input~.checkmark {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+            background-image: url(../../../Assets/images/biometrics/checkmark.svg);
+            background-repeat: no-repeat;
+            background-size: 22px;
+            background-position: center center;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border: none;
+      margin: 0px 0 0 0;
+
+      .no-device {
+        padding: 0px 0 20px 0;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.biometric-custom-device {
+    .custom-device-input {
+      padding: 14px 14px;
+      border-radius: 4px;
+      border: solid 1px #5582a7;
+      font-family: "Sofia Pro";
+      font-size: 14px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #16294c
+    }
+
+    .button {
+      width: 100%;
+    }
+
+    .button-container {
+      padding: 0 0 0 0;
+      margin: 15px 0 0 0;
+    }
+
+  }
+
+  &.biometric-tell-more {
+    .device-list-container {
+      height: 43vh;
+      overflow: auto;
+    }
+
+    .lbl-questions {
+      font-family: "Sofia Pro";
+      font-size: 14px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #16294c;
+      padding: 15px 0 15px 0;
+    }
+
+    .custom-device-input {
+      padding: 14px 14px;
+      border-radius: 4px;
+      border: solid 1px #5582a7;
+      font-family: "Sofia Pro";
+      font-size: 14px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #16294c
+    }
+
+    .button {
+      width: 100%;
+    }
+
+    .button-container {
+      padding: 0 0 0 0;
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &.biometric-collecting-data {
+    .pb-container {
+      padding-bottom: 10px;
+
+      .progress {
+        width: 100%;
+        height: 14px;
+        background-color: #f0f0f0 !important;
+        border-radius: 9px;
+        margin: 0.5rem 0 0.5rem 0;
+
+        .progress-bar {
+          background-color: #ed6b64;
+          border-radius: 9px;
+        }
+      }
+
+      .pb-loading-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pb-loading {
+          font-family: "Sofia Pro";
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #16294c;
+        }
+
+        .pb-loading-percentage {
+          font-family: "Sofia Pro";
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #16294c;
+        }
+      }
+    }
+  }
+}

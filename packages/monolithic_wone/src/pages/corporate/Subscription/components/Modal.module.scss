@@ -1,0 +1,97 @@
+@import "../../../../global.scss";
+
+.modal {
+  .body {
+    padding: 2rem 2rem;
+    background: #fafafc;
+    box-shadow: 0px -4px 24px -5px rgba(22, 41, 76, 0.1);
+    border-radius: 0.25rem;
+    font-family: "Poppins";
+    color: $bunting-color;
+    font-size: 0.8rem;
+    line-height: 140%;
+
+    .h1 {
+      font-family: "Playfair Display";
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    .h3 {
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+
+    .p {
+      color: $nevada-color;
+      margin-bottom: 2rem;
+    }
+
+    .input {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .label {
+        flex-grow: 9;
+        margin: auto;
+
+        .p {
+          margin: 0;
+        }
+      }
+
+      .p {
+        color: $nevada-color;
+        font-size: 0.7rem;
+      }
+
+      .field {
+        flex-grow: 1;
+        width: auto;
+        margin: 0;
+      }
+    }
+
+    .error {
+      color: $burnt-sienna-color;
+      font-weight: 600;
+      margin-bottom: 2rem;
+
+      a {
+        color: $wedgewood-color;
+      }
+    }
+
+    .success {
+      color: $success-color;
+      font-weight: 600;
+    }
+
+    .btnPrimary {
+      width: 100%;
+      margin-bottom: 1rem;
+
+      .spinner {
+        vertical-align: inherit !important;
+        border-width: 0.1rem;
+      }
+    }
+
+    .btnSecondary {
+      width: 100%;
+    }
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+}

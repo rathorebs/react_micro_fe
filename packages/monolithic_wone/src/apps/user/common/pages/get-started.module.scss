@@ -1,0 +1,74 @@
+@import "styles/global.scss";
+
+.get-started-container {
+  height: 100vh;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .get-started-wrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: rem(50px);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $black;
+    text-transform: uppercase;
+
+    span {
+      font-family: "Work Sans", sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  h2 {
+    font-family: "Bitter", serif;
+    font-size: rem(20px);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: $black;
+  }
+
+  .wone-logo-black {
+    width: rem(130px);
+    height: rem(32px);
+  }
+
+  .wone-message {
+    a {
+      display: inline-block;
+      font-family: "Work Sans", sans-serif;
+      font-size: rem(18px);
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: center;
+      text-transform: uppercase;
+      color: $black;
+      padding-bottom: rem(15px);
+      border-bottom: solid rem(2px) $black;
+      margin-top: rem(35px);
+    }
+    h2 {
+      text-transform: none;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+=========================================================================================================
+GENERAL RULES
+=========================================================================================================
+1. We use all small letters and dashes for files and pathnames
+2. We use CamelCase when we import/export JSX components, context providers
+3. We use usePascalCase when we export hooks
+
+=========================================================================================================
+STYLES
+=========================================================================================================
+/src/styles/global.scss
+/src/styles/colors.scss
+/src/styles/fonts.scss
+
+=========================================================================================================
+HOOKS
+=========================================================================================================
+/src/hooks/use-session.ts <- exports useSession
+/src/hooks/auth.ts <- exports useAuth
+
+=========================================================================================================
+CONTEXT
+=========================================================================================================
+/src/context/auth.ts <- exports AuthProvider
+
+=========================================================================================================
+COMPONENTS
+=========================================================================================================
+
+# Option 1 - Single Component
+/src/components/buttons.tsx
+/src/components/buttons.scss
+
+# import Button from "./components/button";
+# import styles from "./components/button.scss";
+
+/src/components/session-card.tsx
+/src/components/session-card.scss
+
+# Option 2 - Group of Components
+/src/components/buttons/index.tsx <- exports all components, so we can import all from "./components/buttons"
+/src/components/buttons/styles.scss <- contains styles for all the components
+/src/components/buttons/primary.tsx <- in case we want to separate from index.tsx
+/src/components/buttons/secondary.tsx <- in case we want to separate from index.tsx
+
+# import { PrimaryButton, SecondaryButton } from "./components/button";
+# import styles from "./components/button.scss";
+
+/src/components/session-card/index.tsx
+/src/components/session-card/styles.scss
+/src/components/session-card/learner.tsx
+/src/components/session-card/practitioner.tsx
+
+# We allow compoennts, context, hook definitions in a component dir
+/src/components/session-card/components/... <- dir follows structure of COMPONENTS
+/src/components/session-card/context/... <- dir follows structure of CONTEXT
+/src/components/session-card/hooks/... <- dir follows structure of HOOKS
+
+=========================================================================================================
+PAGES
+=========================================================================================================
+
+/src/pages/sign-in.jsx
+/src/pages/sign-in.scss
+
+/src/pages/sign-in/index.jsx
+/src/pages/sign-in/styles.scss
+
+# We allow compoennts, context, hook definitions in a page dir
+/src/pages/sign-in/components/... <- dir follows structure of COMPONENTS
+/src/pages/sign-in/context/... <- dir follows structure of CONTEXT
+/src/pages/sign-in/hooks/... <- dir follows structure of HOOKS
+
+=========================================================================================================
+SCSS Naming Conventions
+=========================================================================================================
+
+1. We use small-letters-separated-by-hyphens for classes
+2. All classes are parent specific, and we don't need to prefix with parent name because we use CSS modules
+3. We try to reuse global styles and variables as much as possible from /src/styles/*

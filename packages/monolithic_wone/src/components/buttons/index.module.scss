@@ -1,0 +1,57 @@
+.primaryButton {
+  font-family: Sofia Pro;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 140%;
+  color: #ffffff;
+  background-color: #ed6b64;
+  border-color: #ed6b64;
+}
+
+.primaryButton:disabled {
+  background: #f3f3f2;
+  border-color: #f3f3f2;
+  color: #16294c;
+}
+
+.primaryButton:hover {
+  background: #ed6b64;
+  border-color: #ed6b64;
+  color: #ffffff;
+}
+
+.primaryButton:focus {
+  background: #ed6b64;
+  border-color: #ed6b64;
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgb(238 108 100 / 25%);
+}
+
+.secondaryButton {
+  font-family: Sofia Pro;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 140%;
+  color: #ffffff;
+  background-color: #5582a7;
+  border-color: #5582a7;
+}
+
+.secondaryButton:disabled {
+  background: #f3f3f2;
+  border-color: #f3f3f2;
+  color: #16294c;
+}
+
+.secondaryButton:hover {
+  background: #5582a7;
+  border-color: #5582a7;
+  color: #ffffff;
+}
+
+.secondaryButton:focus {
+  background: #5582a7;
+  border-color: #5582a7;
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgb(85 130 167 / 25%);
+}

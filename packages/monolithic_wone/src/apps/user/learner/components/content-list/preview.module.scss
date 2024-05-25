@@ -1,0 +1,52 @@
+@import "styles/global.scss";
+
+.container {
+  .heading {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: rem(10px);
+    margin-bottom: rem(20px);
+
+    .icon {
+      flex-grow: 0;
+    }
+
+    .label {
+      flex-grow: 0;
+      width: max-content;
+      margin: 0;
+    }
+
+    .line {
+      flex-grow: 1;
+      background: $black;
+      height: rem(1px);
+      position: relative;
+    }
+
+    .arrow-right {
+      flex-grow: 0;
+      margin-left: auto;
+    }
+
+    // .line::after {
+    //   background-color: $black;
+    //   content: "";
+    //   right: 0;
+    //   position: absolute;
+    //   height: rem(10px);
+    //   width: rem(1px);
+    //   top: rem(-4px);
+    // }
+  }
+
+  .items {
+    display: flex;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+}

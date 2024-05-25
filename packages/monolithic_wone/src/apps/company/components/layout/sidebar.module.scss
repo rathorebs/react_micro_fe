@@ -1,0 +1,197 @@
+@import "styles/global.scss";
+
+.sidebar-container {
+  background-color: $black;
+  padding: rem(58px) rem(20px) rem(30px) rem(20px);
+  width: rem(230px);
+  max-width: rem(230px);
+  min-width: rem(230px);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+
+  .nav-top {
+    .sidebar-logo {
+      display: block;
+      cursor: pointer;
+    }
+
+    .greetings-container {
+      margin-top: rem(105px);
+
+      span {
+        display: block;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        font-size: rem(30px);
+        color: $white;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        line-height: normal;
+      }
+    }
+  }
+
+  .navigation-container {
+    padding-top: rem(40px);
+    ul {
+      list-style: none;
+      margin: 0 0;
+      padding: 0 0;
+
+      .pink {
+        a:hover,
+        a.activeClassName {
+          color: $pink-pattern-background;
+        }
+      }
+
+      li {
+        cursor: pointer;
+
+        a {
+          font-family: "Work Sans", sans-serif;
+          text-transform: uppercase;
+          color: $off-white;
+          font-size: rem(14px);
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: rem(12.5px) rem(0px) rem(12.5px) rem(0px);
+          font-weight: 500;
+          svg {
+            width: rem(23px);
+
+            g {
+              stroke: $off-white;
+
+              path {
+                stroke: $off-white;
+              }
+            }
+          }
+
+          span {
+            display: inline-block;
+            margin: rem(0px) rem(0px) rem(0px) rem(17px);
+          }
+
+          &:hover,
+          &.activeClassName {
+            color: $mauve;
+
+            svg {
+              g {
+                stroke: $mauve;
+
+                path {
+                  stroke: $mauve;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-nav-container {
+    cursor: pointer;
+    margin-top: auto;
+
+    .logout {
+      font-family: "Work Sans", sans-serif;
+      text-transform: uppercase;
+      color: $off-white;
+      font-size: rem(14px);
+      position: relative;
+      cursor: pointer;
+      font-weight: 500;
+      span {
+        display: inline-block;
+        padding: rem(12.5px) rem(0px) rem(12.5px) rem(17px);
+      }
+
+      svg {
+        width: rem(23px);
+
+        g {
+          path {
+            stroke: $off-white;
+          }
+        }
+      }
+
+      &:hover {
+        color: $blue-pattern-background;
+
+        svg {
+          g {
+            path {
+              stroke: $blue-pattern-background;
+            }
+          }
+        }
+      }
+    }
+
+    .profile {
+      cursor: pointer;
+
+      a {
+        font-family: "Work Sans", sans-serif;
+        text-transform: uppercase;
+        color: $off-white;
+        font-size: rem(14px);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: rem(12.5px) rem(0px) rem(12.5px) rem(0px);
+        font-weight: 500;
+        svg {
+          width: rem(23px);
+
+          g {
+            stroke: $off-white;
+
+            path {
+              stroke: $off-white;
+            }
+          }
+        }
+
+        span {
+          display: inline-block;
+          margin: rem(0px) rem(0px) rem(0px) rem(17px);
+        }
+
+        &:hover,
+        &.activeClassName {
+          color: $mauve;
+
+          svg {
+            g {
+              stroke: $mauve;
+
+              path {
+                stroke: $mauve;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .switch-user {
+      @extend .profile;
+    }
+  }
+}

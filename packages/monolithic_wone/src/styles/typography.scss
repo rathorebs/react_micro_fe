@@ -1,0 +1,93 @@
+@import "./colors.scss";
+@import "./utility.scss";
+
+body {
+  font-family: "Bitter", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: $black;
+}
+
+h1,
+.h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(20px);
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(16px);
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(14px);
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14px);
+  text-transform: uppercase;
+}
+
+h5,
+.h5 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14px);
+  text-transform: uppercase;
+}
+
+h6,
+.h6 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14px);
+  text-transform: uppercase;
+}
+
+p,
+.p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.text-small {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.text-tab-bar {
+  font-size: 0.625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+a,
+a:hover {
+  color: $black;
+}

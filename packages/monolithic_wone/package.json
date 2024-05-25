@@ -1,0 +1,159 @@
+{
+  "name": "web-app",
+  "version": "2.3.4",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.7.7",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@sentry/browser": "^7.44.2",
+    "@sentry/react": "^7.44.2",
+    "@sentry/tracing": "^7.44.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@tryvital/vital-link": "^0.1.7",
+    "@types/jest": "^29.0.3",
+    "@types/node": "^18.7.23",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
+    "aws-sdk": "^2.1225.0",
+    "bootstrap": "5.2.1",
+    "chart.js": "^3.9.1",
+    "clsx": "^1.2.1",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.5",
+    "env-cmd": "^10.1.0",
+    "firebase": "^9.10.0",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "husky": "^8.0.1",
+    "js-base64": "^3.7.2",
+    "jwt-decode": "^3.1.2",
+    "lint-staged": "^13.0.3",
+    "moment": "^2.29.4",
+    "patch-package": "^6.4.7",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-apollo": "^3.1.5",
+    "react-bootstrap": "^2.5.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-csv": "^2.2.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^18.2.0",
+    "react-file-drop": "^3.1.6",
+    "react-google-charts": "^4.0.0",
+    "react-html5video": "^2.5.1",
+    "react-icons": "^4.4.0",
+    "react-input-range": "^1.3.0",
+    "react-intersection-observer": "^9.4.0",
+    "react-linkedin-insight": "^0.1.3",
+    "react-progressive-image": "^0.6.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^9.0.8",
+    "react-weekly-day-picker": "^1.0.3",
+    "reactstrap": "^9.1.4",
+    "redux": "^4.2.0",
+    "redux-form": "^8.3.8",
+    "sass": "^1.55.0",
+    "source-map-explorer": "^2.5.3",
+    "stats.js": "^0.17.0",
+    "three": "^0.137.5",
+    "typescript": "^4.8.4",
+    "util": "^0.12.4",
+    "web-vitals": "^3.0.2",
+    "workbox-core": "^6.5.4",
+    "workbox-expiration": "^6.5.4",
+    "workbox-precaching": "^6.5.4",
+    "workbox-routing": "^6.5.4"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "postinstall": "patch-package",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "start:development": "export REACT_APP_IS_CORPORATE_APP= && if [ ! -d './zoom-meetingsdk-app/build' ]; then cd ./zoom-meetingsdk-app && yarn && yarn build:development && cd ../; fi && env-cmd -f .env.development npm run-script start",
+    "start:stage": "export REACT_APP_IS_CORPORATE_APP= && if [ ! -d './zoom-meetingsdk-app/build' ]; then cd ./zoom-meetingsdk-app && yarn && yarn build:stage && cd ../; fi && env-cmd -f .env.stage npm run-script start",
+    "start:qa": "export REACT_APP_IS_CORPORATE_APP= && if [ ! -d './zoom-meetingsdk-app/build' ]; then cd ./zoom-meetingsdk-app && yarn && yarn build:qa && cd ../; fi && env-cmd -f .env.qa npm run-script start",
+    "start:qa:window": "set REACT_APP_IS_CORPORATE_APP= && env-cmd -f .env.qa npm run-script start",
+    "start:production": "export REACT_APP_IS_CORPORATE_APP= && if [ ! -d './zoom-meetingsdk-app/build' ]; then cd ./zoom-meetingsdk-app && yarn && yarn build:production && cd ../; fi && env-cmd -f .env.production npm run-script start",
+    "build:development": "export REACT_APP_IS_CORPORATE_APP= && cd ./zoom-meetingsdk-app && yarn && yarn build:development && cd ../ && env-cmd -f .env.development npm run-script build && yarn build-storybook",
+    "build:stage": "export REACT_APP_IS_CORPORATE_APP= && cd ./zoom-meetingsdk-app && yarn && yarn build:stage && cd ../ && env-cmd -f .env.stage npm run-script build && yarn build-storybook",
+    "build:qa": "export REACT_APP_IS_CORPORATE_APP= && cd ./zoom-meetingsdk-app && yarn && yarn build:qa && cd ../ && env-cmd -f .env.qa npm run-script build && yarn build-storybook",
+    "build:production": "export REACT_APP_IS_CORPORATE_APP= && cd ./zoom-meetingsdk-app && yarn && yarn build:production && cd ../ && env-cmd -f .env.production npm run-script build",
+    "start:company:development": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.development npm run-script start",
+    "start:company:stage": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.stage npm run-script start",
+    "start:company:qa": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.qa npm run-script start",
+    "start:company:production": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.production npm run-script start",
+    "build:company:development": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.development npm run-script build",
+    "build:company:stage": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.stage npm run-script build",
+    "build:company:qa": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.qa npm run-script build",
+    "build:company:production": "export REACT_APP_IS_CORPORATE_APP=true && mkdir -p zoom-meetingsdk-app/build && env-cmd -f .env.production npm run-script build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public -o build/storybook",
+    "test-storybook": "test-storybook"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/cli": "^6.5.12",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/node-logger": "^6.5.12",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.74.0"
+  }
+}

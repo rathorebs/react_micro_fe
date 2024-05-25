@@ -1,0 +1,46 @@
+@import "styles/global.scss";
+
+.pill-container {
+  width: 100%;
+  min-height: rem(28px);
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    gap: rem(8px);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    user-select: none;
+
+    li {
+      .pill {
+        cursor: pointer;
+
+        height: rem(28px);
+        padding: rem(7px) rem(10px) rem(7px) rem(10px);
+
+        font-family: "Work Sans", sans-serif;
+        font-size: rem(12px);
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+
+        color: $off-white;
+
+        background: $black !important;
+        opacity: 0.5;
+
+        &.selected {
+          background-color: $black !important;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}

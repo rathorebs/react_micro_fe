@@ -1,0 +1,364 @@
+.companyDetails-container.corporate-container {
+  width: calc(100% - 240px);
+}
+
+.companyDetails-main {
+  width: 87%;
+}
+
+.companyDetails-wrapper {
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.locations-wrapper {
+  height: fit-content;
+  margin-bottom: 2.25rem;
+}
+
+.admins-wrapper {
+  height: fit-content;
+  margin-bottom: 2.25rem;
+}
+
+.companyDetails-container-p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+.companyDetails-container h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.companyDetails {
+  /* width: 90%; */
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  padding: 0.75rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.companyDetails-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+}
+
+.companyName {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.billingEmail {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.companyDetails-left input {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 140%;
+  color: #16294c;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #f3f3f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.companyDetails-left label,
+.companyDetails-right label {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0;
+}
+
+.companyDetails-left-button {
+  width: 40%;
+}
+
+.companyDetails-right {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-changeLogo {
+  display: flex;
+}
+
+.Companylogo {
+  width: 90px;
+  height: 90px;
+  margin-right: 1rem;
+}
+
+.ChangeLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.ChangeLogo h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #5d686e;
+}
+
+.ChangeLogo-btn {
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  color: #5582a7;
+  border: 1.5px solid #5582a7;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+  outline: none;
+  padding: 0.1rem 0;
+  margin-bottom: 0.35rem;
+}
+
+.locations {
+  /* width: 90%; */
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  padding: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+.locations-heading {
+  display: flex;
+}
+
+.locations-heading-first {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1.5;
+  margin-bottom: 0;
+}
+
+.locations-heading-second {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+}
+
+.locations-heading-third {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.locations-data {
+  display: flex;
+  align-items: center;
+}
+
+.locations-data-location {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1.6;
+  margin-bottom: 0;
+}
+
+.locations-data-member {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+}
+
+.locations-data-admin {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.locations-data img {
+  cursor: pointer;
+}
+
+.locations button,
+.admins button {
+  width: 40%;
+  margin-top: 0.75rem;
+}
+
+.admins {
+  /* width: 90%; */
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  padding: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+.admins-heading,
+.admins-data {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.admins-data-member {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admins-heading-first {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1.2;
+  margin-bottom: 0;
+}
+
+.admins-heading-second {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.locations-solid {
+  border-top: 1px solid #ccc;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-details-msg {
+  margin-top: 0.5rem;
+}
+
+.company-admin-name {
+  font-family: "Sofia Pro" !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  color: #16294c !important;
+}
+
+.company-admin-email {
+  font-family: "Poppins" !important;
+  font-weight: 300 !important;
+  font-size: 0.6rem !important;
+  color: #464e5c !important;
+}
+.remove-admin-button-container {
+  position: relative;
+}
+
+@media screen and (max-width: 1170px) {
+  .companyDetails-container.corporate-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .companyDetails-left-button {
+    width: 100%;
+  }
+  .logo-changeLogo .Companylogo {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    margin-right: 0.5rem;
+  }
+  .logo-changeLogo {
+    overflow: hidden;
+    padding-top: 0.35rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .locations button,
+  .admins button {
+    width: 100%;
+  }
+  .locations-data-location {
+    font-size: 0.6rem;
+  }
+  .locations-content-wrapper {
+    min-width: 370px;
+    padding-right: 0.75rem;
+  }
+  .admins-content-wrapper {
+    min-width: 600px;
+  }
+  .locations,
+  .admins {
+    overflow: auto;
+  }
+}

@@ -1,0 +1,102 @@
+@import "styles/global.scss";
+
+.sign-up-container {
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  @media screen and (max-height: 768px) {
+    justify-content: flex-start;
+  }
+  .form-container {
+    width: rem(360px);
+    margin: 0 auto;
+    padding-bottom: rem(20px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    @media screen and (max-height: 768px) {
+      height: auto;
+      justify-content: flex-start;
+    }
+
+    .sign-up-inputs {
+      width: 100%;
+    }
+
+    .sign-up-buttons {
+      width: 100%;
+    }
+
+    .logo {
+      margin-top: rem(72px);
+      margin-bottom: rem(33px);
+    }
+
+    .input-box-containers {
+      padding: rem(30px) rem(30px) rem(15px) rem(30px);
+      border-radius: rem(20px);
+      box-shadow: 0 rem(12px) rem(24px) 0 rgba(33, 33, 33, 0.13);
+      background-color: rgba(255, 255, 255, 0.85);
+      width: 100%;
+
+      .error-message {
+        font-size: rem(11px);
+        border-radius: rem(8px);
+        padding: rem(13px) rem(13px);
+        color: $red;
+        width: 100%;
+        text-align: left;
+      }
+      h3 {
+        font-family: "Bitter", serif;
+        font-size: rem(20px);
+        line-height: rem(28px);
+        color: $black;
+        margin-bottom: rem(8px);
+        text-transform: none;
+      }
+      p {
+        font-family: "Bitter", serif;
+        font-size: rem(12px);
+        line-height: 1.67;
+        color: rgba($black, 1);
+        margin-bottom: rem(8px);
+        text-transform: none;
+        a {
+          color: rgba($black, 0.7) !important;
+          text-decoration: underline;
+        }
+
+        &.lbl-opacity {
+          color: rgba($black, 0.7);
+        }
+        &.lbl-error-message {
+          color: $red;
+        }
+      }
+      .no-eligable {
+        p {
+          margin-top: rem(18px);
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+.custom-loader-style {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

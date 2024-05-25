@@ -1,0 +1,143 @@
+@import "styles/global.scss";
+.company-detail-container {
+  height: auto;
+  margin-left: 0;
+  min-height: calc(100vh - 8px);
+  padding: 5.5rem 9rem 2rem 22.375rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  .headings {
+    .company-details {
+      font-size: rem(26px);
+      text-transform: uppercase;
+      color: $black;
+      font-family: "Work Sans", sans-serif;
+    }
+    .company-span {
+      margin: rem(10px) 0 rem(21px);
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #212121;
+    }
+  }
+  .company-detail-image-and-input {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(34px);
+    .profile-image {
+      margin-right: 32px;
+      position: relative;
+      min-width: rem(265px);
+      max-width: rem(265px);
+      height: rem(199px);
+      margin-bottom: rem(28px);
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+      img {
+        border-radius: rem(10px);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .input-options {
+      min-width: rem(314px);
+      .company-detail-inputs {
+        font-size: rem(14px);
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        color: $dark-shade-grey !important;
+        border: 1px solid $black;
+        padding: rem(28px) rem(15px) rem(15px) rem(13px);
+        text-transform: capitalize;
+      }
+      .company-detail-label {
+        left: 0px;
+      }
+    }
+  }
+  .company-detail-admin-section {
+    max-width: 1200px;
+    min-width: rem(314px);
+    .title-and-button-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: rem(5px);
+      padding: rem(0) rem(0) rem(0) rem(10px);
+      .title {
+        font-size: rem(16px);
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $black;
+        font-family: "Work Sans", sans-serif;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+      }
+      .add-admin-button {
+        padding: rem(13px) rem(10px);
+        font-size: rem(16px);
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+      }
+    }
+    .table-container {
+      thead {
+        tr {
+          th {
+            padding-bottom: rem(20px);
+            &:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
+      td {
+        padding: rem(15px) rem(10px);
+      }
+      th {
+        font-size: rem(14px);
+        text-transform: uppercase;
+        color: $black;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+      }
+      tbody {
+        tr:hover {
+          opacity: 0.6;
+        }
+      }
+      .table-last-item {
+        text-align: right;
+        padding-top: 5px;
+        div {
+          font-family: "Work Sans", sans-serif;
+          font-size: rem(12px);
+          background-color: #212121;
+          opacity: 0.5;
+          color: #fff;
+          width: max-content;
+          margin-left: auto;
+          padding: rem(3px) rem(9px);
+          border-radius: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

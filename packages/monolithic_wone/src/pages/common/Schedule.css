@@ -1,0 +1,601 @@
+
+.tsession-calendar {
+  width: 95%;
+  margin-right: 5%;
+}
+
+.tsession-container p {
+  margin-bottom: 0;
+  height: auto;
+  padding: 0.25rem 0;
+  font-size: 0.8rem;
+}
+
+.tsession-container p.f20 {
+  font-size: 1rem;
+}
+
+.teacher-monthName {
+  padding-bottom: 1.5rem;
+  width: 120px;
+  display: inline-block;
+  position: relative;
+}
+.teacher-monthName-p {
+  width: 112px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  line-height: 19.5px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  color: #16294c;
+  border: none;
+  outline: none;
+}
+
+.tsession-months {
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: #16294c;
+  background-color: #f3f3f2;
+  border: none;
+}
+
+.fa-chevron-right {
+  flex-basis: 15%;
+  /* background-color: #5582A7; */
+}
+.fa-chevron-left {
+  flex-basis: 3%;
+}
+
+.today-tsession {
+  padding-top: 2rem;
+}
+
+.today-tsession h3 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.today-tsession-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.52rem;
+}
+
+.today-tsession-container.timeline:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 1.05rem;
+  left: 0.3rem;
+  background: #ed6b64;
+  opacity: 0.2;
+}
+
+.today-tsession-container.timeline:last-child:before {
+  display: none;
+}
+
+.week-tsession-time {
+  display: flex;
+  justify-content: space-between;
+  width: 176px;
+}
+.tsession-time {
+  display: flex;
+  justify-content: space-between;
+  width: 184px;
+}
+
+.today-tsession-time {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.today-tsession-time img,
+.week-tsession-time img {
+  width: 13px;
+  height: 13px;
+  align-self: center;
+}
+
+.today-tsession-time p,
+.week-tsession-time p {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #435473;
+}
+.today-tsession-time p {
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.tsession-detail {
+  margin: 4.8rem 0;
+  margin-left: 0;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+}
+
+.teacher-teacher-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.teacher-teacher-text {
+  flex: 1;
+  padding-left: 0;
+}
+
+.tsession-serviceName {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+  padding-bottom: 0.25rem;
+}
+.tsession-teacherName {
+  display: flex;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 140%;
+  color: #16294c;
+  align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  .tsession-teacherName {
+    flex-direction: column !important;
+    align-items: flex-start;
+    font-size: 0.7rem !important;
+  }
+  .tsession-container p {
+    font-size: 0.7rem !important;
+  }
+  .tsession-detail {
+    margin: 0.4rem 0;
+  }
+  .today-tsession h3 {
+    font-size: 0.9rem;
+  }
+  .teacher-weekDayName {
+    font-size: 0.6rem;
+  }
+  .teacher-weekDate {
+    font-size: 0.85rem;
+    line-height: normal;
+  }
+  .tactive {
+    padding: 0.25rem;
+  }
+}
+
+.tsession-detail Button {
+  background: #ed6b64;
+  border-radius: 0.2rem;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  font-family: Sofia Pro;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  min-width: 112px;
+  justify-content: center;
+}
+
+.tsession-detail Button.register-button {
+  background: #5582a7;
+  border-radius: 0.2rem;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  outline: none;
+  border: none;
+  width: auto;
+  font-size: 0.7rem;
+  font-family: Sofia Pro;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  min-width: 112px;
+}
+
+.tsession-detail Button.register-button.disabled {
+  pointer-events: none;
+  color: #16294c;
+  /* font-weight: 600; */
+  opacity: 1;
+  background: #f3f3f2;
+  font-size: 0.7rem;
+  font-family: Sofia Pro;
+  font-weight: 300;
+
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  outline: none;
+  border: none;
+  min-width: 112px;
+  justify-content: center;
+}
+
+.contactSupport-btn {
+  background: #5582a7;
+  border-radius: 0.2rem;
+  padding: 0.3rem 0 0.3rem 0;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.register-button {
+  background: #5582a7;
+  border-radius: 0.2rem;
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 0.7rem;
+  font-family: Sofia Pro;
+  font-weight: 300;
+}
+
+.register-button.bg-orange {
+  background: #ed6b64;
+}
+
+.register-button.disabled {
+  pointer-events: none;
+  color: #16294c;
+  /* font-weight: 600; */
+  opacity: 1;
+  background: #f3f3f2;
+  font-size: 0.7rem;
+  font-family: Sofia Pro;
+  font-weight: 300;
+
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  outline: none;
+  border: none;
+  min-width: 176px;
+  justify-content: center;
+}
+
+.contactSupport-btn a {
+  font-family: Sofia Pro;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.week-tsession {
+  padding-top: 1.5rem;
+}
+
+.week-tsession h3 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.tactive {
+  background: #ed6b64;
+  border-radius: 0.1rem;
+  color: #ffffff;
+}
+
+.tsession-through {
+  padding: 0px 0.5rem;
+  color: #5582a7;
+}
+
+.tsession-through.f20 {
+  font-size: 1rem;
+}
+
+.tsession-detail-feedback-right {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  height: auto;
+  /* height:377px; */
+  width: 352px;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  transition: 1s ease 0.3s;
+}
+.tsession-calendar .tsession-detail-feedback-right .session-details-condition {
+  position: relative !important;
+}
+
+@media screen and (max-width: 991px) {
+  .tsession-detail-feedback-right {
+    width: 100%;
+  }
+  .tsession-detail {
+    padding-right: 0.25rem;
+  }
+  .teacher-teacher-img {
+    width: 56px;
+  }
+  .tsession-calendar {
+    margin: 0;
+    width: 100%;
+  }
+}
+.tsession-detail-feedback-right-h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+}
+
+.tsession-detail-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* height:51%;   */
+  /* height:338px; */
+  padding: 2rem 1rem 2rem 1rem;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  margin-bottom: 1.2rem;
+  background-image: url("../../Assets/background.png");
+  background-color: #fff;
+  background-position: 82% 20px;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.teacher-demo-image {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+  background-color: #eee;
+}
+
+.tsession-detail-right h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
+  color: #16294c;
+  margin-bottom: 0.52rem;
+}
+
+.tsession-detail-right-time {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 140%;
+  text-align: center;
+  color: #435473;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.tsession-detail-right h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 140%;
+  text-align: center;
+  color: #5d686e;
+}
+
+
+
+.tsession-detail-right-button {
+  background: #ed6b64;
+  border-radius: 0.2rem;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  min-width: 112px;
+  justify-content: center;
+  margin: 0;
+}
+
+.inActive {
+  background: #ed6b64;
+  border-radius: 0.2rem;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-size: 0.7rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  min-width: 112px;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  font-weight: normal;
+}
+
+.teacher-previous-feedback {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+  margin-bottom: 0.8rem;
+  padding: 0 1rem;
+}
+
+.tsession-feedback-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-bottom: 0;
+  /* height:200px; */
+  background: #ffffff;
+}
+.tsession-feedback-user-detail {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f3f3f2;
+  margin-bottom: 0.6rem;
+}
+
+.tsession-feedback-image {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.teacher-user-detail-user-name {
+  padding-left: 0.65rem;
+}
+.teacher-user-detail-user-name h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  margin-bottom: 0;
+}
+
+.teacher-user-detail-user-name p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.65rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.teacher-user-detail-user-name + p.teacher-user-detail-date {
+  font-size: 0.6rem;
+}
+
+.teacher-user-detail-date {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.6rem;
+  line-height: 140%;
+  color: #16294c;
+  padding-left: 3rem;
+  text-align: right;
+  flex: 1;
+}
+
+.tsession-feedback-user-message {
+  border-bottom: 1px solid rgba(22, 41, 76, 0.2);
+  padding-bottom: 0.75rem;
+}
+
+.tsession-feedback-right:last-child .tsession-feedback-user-message {
+  border: 0;
+}
+
+.tsession-feedback-user-message h2 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  margin-top: 0.8rem;
+}
+
+.tsession-feedback-user-message p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #435473;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.tsession-feedback-user-message p.light {
+  color: #5d686e;
+}
+
+hr.more-solid {
+  border-top: 0.2px solid #f3f3f2;
+}
+
+@media screen and (max-width: 768px) {
+  .tsession-detail Button {
+    flex: 0;
+  }
+}

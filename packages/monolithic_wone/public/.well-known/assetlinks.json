@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.walkingonearth.app",
+    "sha256_cert_fingerprints":
+      ["62:EF:60:C8:18:86:C4:0E:FF:BD:F0:C9:FD:42:55:4B:36:69:E4:33:5F:B5:69:F3:CB:D5:29:96:93:3C:43:B4"]
+   }
+}]

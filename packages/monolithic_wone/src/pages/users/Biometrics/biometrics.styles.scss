@@ -1,0 +1,10 @@
+.remove-biometric-container {
+  min-height: calc(100vh - 175px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    max-width: 460px;
+    min-width: 200px;
+  }
+}

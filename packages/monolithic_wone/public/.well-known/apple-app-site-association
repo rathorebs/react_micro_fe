@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "77Z54763LB.com.woe.woeApp",
+        "paths": [
+          "*"
+        ],
+        "appIDs": [
+          "77Z54763LB.com.woe.woeApp"
+        ],
+        "components": [
+          {
+            "/": "/*"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "burkeholland.simple-react-snippets",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens"
+  ]
+}

@@ -1,0 +1,421 @@
+.Tnavbar .nav-menu {
+  background-image: url(../../../Assets/User-main-img.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 198px;
+  background-color: #16294c;
+  height: 100vh;
+  width: 196px;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 850ms;
+  width: 16%;
+  overflow-y: hidden;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.Tnavbar .nav-menu-img {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+}
+
+.Tnavbar .user-details {
+  position: absolute;
+  top: 9.75rem;
+  left: 1rem;
+}
+
+.Tnavbar .user-details h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.Tnavbar .user-details p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.Tnavbar .nav-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  list-style: none;
+  height: 60px;
+}
+
+.Tnavbar .nav-text a {
+  text-decoration: none;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 140%;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0.8rem;
+  border-radius: 0.2rem;
+}
+
+.Tnavbar .current {
+  background: #ed6b64;
+  border-radius: 0.2rem;
+}
+
+.Tnavbar .nav-menu-items {
+  width: 100%;
+  margin-top: 14.5rem;
+}
+
+.Tnavbar span {
+  margin-left: 0.8rem;
+}
+
+.Tnavbar .user-logout {
+  display: flex;
+  width: 90%;
+  position: absolute;
+  left: 0.55rem;
+  bottom: 5%;
+}
+
+.Tnavbar .teacher-user-logout {
+  display: flex;
+  width: 90%;
+  position: absolute;
+  left: 0.55rem;
+  bottom: 5%;
+}
+
+.Tnavbar .logout-user-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.Tnavbar .logout-arrow {
+  cursor: pointer;
+}
+
+.logout-user-detail {
+  /* display: flex;
+    flex-direction: column; */
+  width: 112px;
+  padding-left: 0.4rem;
+}
+
+.Tnavbar .logout-user-detail h2 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.Tnavbar .logout-user-detail p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.55rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.Tnavbar .location-tab {
+  background-color: #435473;
+  color: white;
+  height: 58px;
+  margin-bottom: 0.5rem;
+}
+
+.Tnavbar .CNavbar-city {
+  width: 67px;
+  height: 44px;
+  position: absolute;
+  top: 11.4rem;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  background: #435473;
+  width: 100%;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  margin-top: 1rem;
+}
+
+.Tnavbar .CNavbar-city-select {
+  background: #435473;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #ffffff;
+  flex: 1;
+  width: 50%;
+}
+
+.Tnavbar .CNavbar-city-select option {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.Tnavbar .CNavbar-city img {
+  flex: 0.3;
+}
+
+.Tnavbar .popovers-container {
+  background: #435473;
+
+  position: absolute;
+  bottom: 4.65rem;
+  left: 4rem;
+}
+
+.Tnavbar .admin-setting,
+.corporate-logout {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.Tnavbar .admin-setting:hover,
+.corporate-logout:hover {
+  background-color: #5582a7;
+}
+
+.m-header {
+  background-color: #16294c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.5rem 0.6rem;
+  display: none;
+}
+
+.m-header img.nav-menu-img {
+  width: 40px;
+}
+
+.m-header .f22 {
+  font-size: 0.9rem;
+  padding-left: 0.75rem;
+}
+
+.sidebar-toggle-btn {
+  position: absolute;
+  top: 50%;
+  right: -0.7rem;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+  display: block;
+  border: 1px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 20px -5px #6a6868;
+  opacity: 0;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  z-index: -1;
+  transition: all 0.3s 0.1s ease-in;
+  -webkit-transition: all 0.3s 0.1s ease-in;
+}
+.sidebar-toggle-btn img {
+  width: 8px;
+  height: 13px;
+}
+
+.nav-menu:hover .sidebar-toggle-btn {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  z-index: 9;
+}
+
+.nav-menu.closed {
+  width: 83px;
+  background-size: auto;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.nav-menu .sidebar-toggle-btn img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.nav-menu.closed .sidebar-toggle-btn img {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+.nav-menu.closed .nav-text a img {
+  margin: 0 !important;
+}
+
+.nav-menu.closed .nav-text a span {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: none;
+  -webkit-transition: none;
+  display: inline-block;
+}
+
+.nav-menu .nav-text a {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-menu .nav-text a span {
+  transition: all 0.3s 0.3s ease;
+  -webkit-transition: all 0.3s 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.nav-menu.closed .user-details {
+  opacity: 0;
+  z-index: -1;
+  width: 0;
+  height: 104px;
+  overflow: hidden;
+  transition: none !important;
+  -webkit-transition: none !important;
+}
+
+.user-details {
+  transition: all 0.3s 0.3s ease;
+  -webkit-transition: all 0.3s 0.3s ease;
+}
+
+.nav-menu.closed + div.corporate-container {
+  padding-left: 6.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu.closed + div.corporate-container {
+    padding: 0.75rem;
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.nav-menu .logout-container,
+.nav-menu .submit-feedback,
+.nav-menu .switch-dashboard {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  border-radius: 0.25rem;
+  margin: 0 1.2rem 1rem 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #16294c;
+  cursor: pointer;
+}
+.nav-menu .switch-dashboard {
+  margin: 0 1.2rem 0rem 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  /*  .nav-menu .logout-container, */
+  .nav-menu .submit-feedback {
+    margin: 0 1.2rem 2rem 1.2rem !important;
+  }
+  .nav-menu .switch-dashboard {
+    margin: 0 1.2rem 1rem 1.2rem !important;
+  }
+}
+.nav-menu .logout-container img,
+.nav-menu .submit-feedback img,
+.nav-menu .switch-dashboard img {
+  width: 19px;
+  height: 19px;
+}
+.nav-menu .logout-container span,
+.nav-menu .submit-feedback span,
+.nav-menu .switch-dashboard span {
+  transition: all 0.3s 0.3s ease;
+  -webkit-transition: all 0.3s 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #e5e5e5;
+  font-family: "Sofia Pro";
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+ {
+}
+.nav-menu .logout-container:hover,
+.nav-menu .submit-feedback:hover,
+.nav-menu .switch-dashboard:hover {
+  border-radius: 4px;
+  background-color: #ed6b64;
+}
+
+.nav-menu.closed .logout-container,
+.nav-menu.closed .submit-feedback,
+.nav-menu.closed .switch-dashboard {
+  justify-content: center !important;
+}
+.nav-menu.closed .logout-container img,
+.nav-menu.closed .submit-feedback img,
+.nav-menu.closed .switch-dashboard img {
+  margin-right: 0 !important;
+}
+.icon-feedback {
+  width: 20px !important;
+  height: 26px !important;
+}

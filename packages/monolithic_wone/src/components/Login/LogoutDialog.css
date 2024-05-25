@@ -1,0 +1,50 @@
+.logout-dialog-container-form {
+  padding: 1.5rem 1.75rem;
+  max-width: 100%;
+  background: #fafafc;
+  text-align: center;
+  box-shadow: 0px -4px 24px -5px rgba(22, 41, 76, 0.1);
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.logout-dialog-container-form h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: #16294c;
+  align-self: center;
+}
+.logout-dialog-container-form p {
+  margin-bottom: 0;
+}
+
+.logout-dialog-container-form-crossBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dialog-yes-btn {
+  font-family: Sofia Pro;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #5582a7;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  width: 56px;
+}
+
+.dialog-yes-btn:hover {
+  background: #ed6b64;
+}

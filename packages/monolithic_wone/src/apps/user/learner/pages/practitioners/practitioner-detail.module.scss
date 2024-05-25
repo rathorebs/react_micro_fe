@@ -1,0 +1,71 @@
+@import "styles/global.scss";
+
+.landscape-image-container {
+  width: 100%;
+  margin-bottom: rem(35.2px);
+
+  background: $black;
+  position: relative;
+
+  .landscape-image {
+    background: $black;
+
+    width: 100%;
+    height: rem(480px);
+    min-height: rem(480px);
+    max-height: rem(480px);
+
+    object-fit: cover;
+  }
+}
+
+.details-container {
+  text-align: justify;
+
+  .section {
+    margin-bottom: rem(32px);
+
+    .accreditations-list {
+      padding: 0;
+      width: fit-content;
+      columns: 2;
+      column-gap: rem(39px);
+
+      li {
+        list-style-type: none;
+        background: url("/Assets/iconCheck.svg") no-repeat;
+        padding-left: rem(22px);
+        background-position: left 4px;
+        width: 100%;
+      }
+    }
+
+    .video-container {
+      width: 100%;
+
+      border-radius: rem(20px);
+      overflow: hidden;
+
+      height: rem(480px);
+      min-height: rem(480px);
+      max-height: rem(480px);
+
+      .video {
+        height: rem(480px);
+        min-height: rem(480px);
+        max-height: rem(480px);
+      }
+    }
+  }
+
+  h2 {
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: rem(11px);
+  }
+
+  p {
+    font-size: rem(16px);
+    line-height: 1.63;
+  }
+}
