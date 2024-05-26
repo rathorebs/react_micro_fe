@@ -7,6 +7,7 @@ import {
 
 import Landing from './components/Landing';
 import Pricing from './components/Pricing';
+import NewFile from './components/NewFile.tsx';
 import ApolloClientProvider from './providers/apollo-client';
 
 const generateClassName = createGenerateClassName({
@@ -21,6 +22,7 @@ export default ({ history }) => {
         <Router history={history}>
           <Switch>
             <Route exact path="/pricing" component={Pricing} />
+            <Route exact path="/newfile" component={NewFile} />
             <Route path="/" component={Landing} />
           </Switch>
         </Router>
