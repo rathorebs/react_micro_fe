@@ -7,6 +7,8 @@ import {
 
 import Signin from './components/Signin';
 import Signup from './components/Signup';
+import NewFile from "./components/NewFile.tsx";
+import ApolloClientProvider from "./providers/apollo-client";
 
 const generateClassName = createGenerateClassName({
   productionPrefix: 'au',
@@ -16,6 +18,7 @@ export default ({ history, onSignIn }) => {
   return (
     <div>
       <StylesProvider generateClassName={generateClassName}>
+ <ApolloClientProvider>
         <Router history={history}>
           <Switch>
             <Route path="/auth/signin">
@@ -26,6 +29,7 @@ export default ({ history, onSignIn }) => {
             </Route>
           </Switch>
         </Router>
+  </ApolloClientProvider>
       </StylesProvider>
     </div>
   );
