@@ -1,0 +1,62 @@
+@import "styles/global.scss";
+
+.link {
+  display: block;
+  max-width: min-content;
+}
+
+.card {
+  border-radius: rem(20px);
+  box-shadow: rem(0px) rem(12px) rem(24px) rem(0px) rgba(33, 33, 33, 0.13);
+
+  width: rem(360px);
+  height: rem(284px);
+  position: relative;
+
+  border: 0;
+
+  .image-container {
+    img {
+      width: rem(360px);
+      height: rem(284px);
+      object-fit: cover;
+    }
+  }
+
+  .image-container::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.89)
+    );
+  }
+
+  .detail {
+    position: absolute;
+    bottom: rem(0px);
+    padding: rem(17px) rem(21px) rem(17px) rem(21px);
+
+    .title {
+      font-size: rem(16px);
+      font-weight: 500;
+      line-height: normal;
+      color: $black;
+      margin: rem(0px) rem(0px) rem(5px);
+      font-family: "Work Sans", sans-serif;
+    }
+
+    .subtitle {
+      font-size: rem(16px);
+      font-weight: normal;
+      line-height: 1.63;
+      color: $black;
+      margin: rem(5px) rem(37px) rem(0px) rem(0px);
+    }
+  }
+}

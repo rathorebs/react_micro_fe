@@ -1,0 +1,70 @@
+@import "styles/global.scss";
+
+.interstitial-modal {
+  .interstitial-modal-content {
+    border: 0;
+    border-radius: rem(20px);
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/Assets/wone_serenity.png");
+    .header {
+      padding: rem(20px);
+      border: 0;
+      button {
+        background-size: auto 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("/Assets/icon/icon_close.svg");
+        opacity: 1;
+      }
+      button:focus {
+        box-shadow: none;
+      }
+    }
+    .content-body {
+      padding: 0;
+      .content {
+        .title {
+          margin-bottom: rem(12px);
+          font-size: rem(40px);
+          text-transform: uppercase;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          color: $black;
+          padding: rem(0) rem(26px);
+        }
+        .sub-title {
+          margin-bottom: rem(52px);
+          padding: rem(0) rem(26px);
+          p {
+            font-size: rem(20px);
+            line-height: rem(28px);
+            color: $black;
+          }
+        }
+        .image {
+          width: 100%;
+          margin-bottom: rem(32px);
+        }
+      }
+    }
+
+    .modal-footer {
+      border: 0;
+      padding: rem(16px) rem(30px);
+      .error-message {
+        color: $red;
+      }
+      .footer {
+        width: 100%;
+        button {
+          width: 100%;
+        }
+        .remind-later {
+          font-size: rem(14px);
+        }
+      }
+    }
+  }
+}

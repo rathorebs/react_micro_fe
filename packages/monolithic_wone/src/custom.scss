@@ -1,0 +1,124 @@
+// Links
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.pl-2,
+.px-2 {
+  padding-left: 0.4rem !important;
+}
+
+.mr-3,
+.mx-3 {
+  margin-right: 0.8rem !important;
+}
+
+.ml-2,
+.mx-2 {
+  margin-left: 0.4rem !important;
+}
+
+.px-md-3 {
+  padding-right: 0.8rem !important;
+  padding-left: 0.8rem !important;
+}
+
+.py-md-3 {
+  padding-bottom: 0.8rem !important;
+  padding-top: 0.8rem !important;
+}
+
+.px-md-4 {
+  padding-right: 1.2rem !important;
+  padding-left: 1.2rem !important;
+}
+
+.close {
+  float: right;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+
+.modal-header .close {
+  padding: 0.8rem;
+  margin: -0.8rem -0.8rem -0.8rem auto;
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.mr-2,
+.mx-2 {
+  margin-right: 0.4rem !important;
+}
+
+.ml-1,
+.mx-1 {
+  margin-left: 0.2rem !important;
+}
+
+.modal-footer {
+  padding: 0.6rem;
+}
+
+.h-10 {
+  height: 10px !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.mb-3 {
+  margin-bottom: 0.8rem !important;
+}
+.rh5v-Overlay_inner {
+  width: 48px;
+  height: 48px;
+  margin-left: -1.5rem;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-left: -1rem;
+    display: none;
+  }
+  display: inline-block;
+    background-color: rgba(0,0,0,0) !important;
+    background-image: url("Assets/musicAudioPlay.svg");
+    background-color: transparent; 
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dialog-yes-btn {
+  font-size: 1rem;
+}
+.dialog-no-btn {
+  font-family: Sofia Pro;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  width: 76px;
+}

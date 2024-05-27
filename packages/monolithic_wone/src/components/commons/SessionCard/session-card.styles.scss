@@ -1,0 +1,56 @@
+@import "../../../variables";
+
+.session-card {
+  box-shadow: 0 4px 24px -5px $box-shadow-color;
+  .thumbnail-img {
+    height: 100%;
+    width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    object-fit: cover;
+    background-color: $box-shadow-color;
+  }
+
+  .register-button {
+    &.disabled {
+      min-width: 112px;
+    }
+    min-width: 112px;
+  }
+
+  .font-sofia {
+    font-family: "Sofia Pro", sans-serif;
+    font-weight: 400;
+    color: $bunting-color;
+    &.fiord {
+      color: $fiord-color;
+    }
+    &.f18 {
+      font-size: 0.9rem;
+    }
+  }
+
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: $bunting-color;
+    span {
+      color: $wedgewood-color;
+    }
+  }
+  &::before {
+    content: "";
+    width: 1px;
+    height: 103%;
+    position: absolute;
+    top: 1.05rem;
+    left: 0.3rem;
+    background: $burnt-sienna-color;
+    opacity: 0.2;
+  }
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+}

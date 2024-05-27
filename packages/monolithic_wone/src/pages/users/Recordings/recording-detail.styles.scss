@@ -1,0 +1,98 @@
+.corporate-container-white {
+  background-color: #fff !important;
+}
+.recordings-details {
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .detail-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  h6 {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7rem;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    font-variant: small-caps;
+    color: #435473;
+    margin-top: 1rem;
+  }
+  h4 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #16294c;
+  }
+  .video-container {
+    margin-top: 1rem;
+    video {
+      //width: 1024px;
+    }
+  }
+  .video-desc {
+    h3 {
+      margin-top: 1rem;
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 140%;
+      color: #16294c;
+    }
+    p {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.7rem;
+      line-height: 140%;
+      color: #16294c;
+    }
+    .preparation-material {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #f3f3f2;
+      span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.7rem;
+        line-height: 140%;
+        color: #5582a7;
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.fav-container {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: 0;
+    right: 0;
+  }
+}

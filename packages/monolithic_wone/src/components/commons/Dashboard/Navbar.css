@@ -1,0 +1,226 @@
+.nav-menu {
+  background-image: url(../../../Assets/User-main-img.png);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: 262px;
+  background-position: center top;
+  background-color: #16294c;
+  padding-top: 7.5rem;
+  max-width: 256px;
+  width: 256px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  height: 100vh;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.menu_image {
+  width: 19px;
+}
+
+.logout_image {
+  width: 19px;
+}
+
+.option-list {
+  height: 100%;
+  overflow-y: auto;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  background:
+    /* Shadow covers */ linear-gradient(#16294c 30%, #16294c),
+    linear-gradient(#16294c, #16294c 70%) 0 100%,
+    /* Shadows */ linear-gradient(rgba(0, 0, 0, 0.25), transparent),
+    linear-gradient(transparent, rgba(0, 0, 0, 0.25)) 0 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
+}
+
+.option-list::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+/* .logout-container {
+  padding: 0.5rem 0;
+  background-color: #16294c;
+  margin-bottom: 20px !important;
+} */
+
+.option-list > div:first-child {
+  overflow: hidden !important;
+  height: 107px;
+}
+.option-list .user-details p {
+  font-family: Poppins;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    left: -100%;
+    min-width: 224px;
+    max-width: 224px;
+    background-position: center 48px;
+    padding-bottom: 2.75rem;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    padding-top: 10rem;
+  }
+
+  /* .nav-menu .nav-menu-img {
+    opacity: 0;
+    z-index: -1;
+  } */
+
+  /* .nav-menu h2.f22 {
+    display: none;
+  } */
+
+  .option-list {
+    height: calc(100vh - 414px) !important;
+  }
+
+  .option-list > div:first-child {
+    width: 100%;
+    height: auto;
+    overflow: auto !important;
+  }
+
+  .logout-arrow {
+    width: 24px;
+  }
+
+  .m-header {
+    display: flex !important;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 50%);
+  }
+}
+
+.CNavbar-city {
+  display: flex;
+  justify-content: space-around;
+  background: #435473;
+  width: 100%;
+}
+
+.CNavbar-city-select {
+  background: #435473;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #ffffff;
+  flex: 1;
+  width: 100%;
+  min-width: 160px;
+  max-width: 160px;
+}
+
+.CNavbar-city-select > button,
+.reset-button {
+  border: 0;
+  outline: none;
+  padding-left: 0;
+  box-shadow: none !important;
+}
+
+.CNavbar-city-select .dropdown-toggle::after {
+  display: none;
+}
+
+.CNavbar-city-select .dropdown-toggle .caret {
+  position: absolute;
+  right: 0;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+}
+
+.CNavbar-city-select .dropdown-toggle[aria-expanded="true"] .caret {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.CNavbar-dropdown-menu {
+  margin-left: -3.6rem;
+  margin-top: 0.4rem;
+  padding: 0;
+  background: #435473;
+  color: #fff;
+  max-height: 70vh;
+  overflow: auto;
+  width: 243px;
+  border-radius: 0;
+}
+.CNavbar-dropdown-menu.right {
+  width: auto;
+  margin-left: -5.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .CNavbar-dropdown-menu {
+    margin-left: 0;
+  }
+  .CNavbar-dropdown-menu.right {
+    width: auto;
+    margin-left: 0;
+  }
+}
+.CNavbar-dropdown-menu .dropdown-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #16294c;
+}
+.CNavbar-dropdown-menu .dropdown-item:last-child {
+  border-bottom: 0;
+}
+.CNavbar-dropdown-menu .dropdown-item:hover {
+  background: #5582a7;
+}
+@media screen and (max-width: 1200px) {
+  .CNavbar-dropdown-menu .dropdown-item {
+    padding: 0.5rem 0 0 4.5rem;
+  }
+  .nav-menu:not(.closed) {
+    max-width: 200px;
+    min-width: 200px;
+    z-index: 9;
+  }
+}
+
+.CNavbar-city-select option {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+.CNavbar-options a {
+  text-decoration: none;
+}
+
+.CNavbar-options a:hover,
+.CNavbar-options a:focus,
+.CNavbar-options a.current {
+  border-radius: 0.2rem;
+  background-color: #ed6b64;
+}
+.option-list ul li img {
+  width: 19px;
+  height: 19px;
+}

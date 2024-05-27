@@ -1,0 +1,30 @@
+.articles {
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-right: 0%;
+  }
+  h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #16294c;
+  }
+  p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #435473;
+    &.filtered-result {
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 140%;
+      color: #16294c;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

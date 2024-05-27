@@ -1,0 +1,72 @@
+.employee_vidContainer {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.employee_welcome_title {
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.employee_welcome_dialogue {
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 140%;
+  text-align: center;
+  color: #16294c;
+}
+
+.inviteBtn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.inviteBtn_container > button {
+  width: 100%;
+}
+
+.video_play_icon_container {
+  position: absolute;
+  top: 45%;
+  right: 45%;
+}
+
+.video_play_icon {
+  width: 40px;
+  cursor: pointer;
+}
+
+.close_container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.close_container > img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.addEmployee-wrapper,
+.modal_container {
+  display: flex;
+  align-items: center;
+}
+
+.WelcomeVideo-modal {
+  max-width: 825px;
+  display: flex;
+  align-items: center;
+  color: #16294c;
+  height: 100%;
+  margin: auto;
+}
+
+.WelcomeVideo-modal-content {
+  padding: 1.125rem 1.125rem;
+}

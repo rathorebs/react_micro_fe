@@ -1,0 +1,198 @@
+.adminSetting-accInfo {
+  height: fit-content;
+  margin-bottom: 2.25rem;
+}
+
+.adminSetting-container-p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.adminSetting-container h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+}
+.adminSetting {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  padding: 0.75rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adminSetting-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+}
+
+.adminSettingName {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.adminSettingEmail {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.adminSettingJobTitle {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.adminSetting-left label {
+  margin-bottom: 0;
+  color: #16294c;
+  font-family: Sofia Pro;
+  font-weight: 400;
+}
+
+.adminSetting-left input {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 140%;
+  color: #16294c;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #f3f3f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.adminSetting-right label,
+.companyDetails-right label {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+  padding-bottom: 0.4rem;
+}
+
+.adminSetting-left-button {
+  width: 40%;
+}
+.adminSetting-right {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-changeLogo {
+  display: flex;
+}
+
+.Companylogo {
+  width: 90px;
+  height: 90px;
+  margin-right: 1rem;
+}
+
+.ChangeLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.ChangeLogo h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #5d686e;
+  margin-top: 0.05rem;
+}
+
+.fileinputs {
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+}
+
+.fakefile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: 1.5px solid #5582a7;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+  outline: none;
+  margin-bottom: 0.35rem;
+  position: absolute;
+  padding: 0.2rem;
+  width: 61%;
+}
+
+.fakefile input {
+  border: none;
+  width: 100%;
+}
+
+.fakefile input::placeholder {
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  color: #5582a7;
+  padding: 0.1rem 0;
+}
+
+.Originalfile {
+  position: relative;
+  text-align: right;
+  opacity: 0;
+  z-index: 2;
+  height: 100%;
+  left: -5rem;
+  cursor: pointer;
+}
+
+.adminSetting-changePass {
+  height: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.custom-password-field .field_field__fYHJM {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.custom-password-field .field_field__fYHJM input {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .adminSetting-left-button {
+    width: 100%;
+  }
+  .adminSetting {
+    flex-direction: column;
+  }
+}

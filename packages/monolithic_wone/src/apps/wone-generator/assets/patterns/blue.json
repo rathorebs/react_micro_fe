@@ -1,0 +1,104 @@
+{
+  "mode": { "value": { "name": "Pattern" } },
+  "size": {
+    "value": {
+      "name": "Portrait",
+      "aspect": "16:9",
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "sizeCustom": {
+    "value": { "name": "Custom", "aspect": "", "width": 1920, "height": 1080 }
+  },
+  "keyframe": { "value": { "name": "Keyframe A", "key": "a" } },
+  "color": {
+    "pattern": {
+      "value": { "name": "Blue", "background": "#BEC0E1", "primary": "#0F57E5" }
+    },
+    "text": {
+      "value": {
+        "name": "Light",
+        "background": "#1D1D1B",
+        "primary": "#FCFCFC"
+      }
+    }
+  },
+  "text": {
+    "value": "\n\nGrowth begins jjjjjkkkkkkkkkkk\nwith balance\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  "images": {
+    "patternTexture": {
+      "value": {
+        "source": {
+          "name": "patternTexture",
+          "type": "texture",
+          "path": "images/img.jpg",
+          "data": null
+        },
+        "file": {
+          "metadata": {
+            "version": 4.5,
+            "type": "Texture",
+            "generator": "Texture.toJSON"
+          },
+          "uuid": "757999A6-BE76-46E4-9B5B-0C8CAA24803D",
+          "name": "",
+          "mapping": 300,
+          "repeat": [1, 1],
+          "offset": [0, 0],
+          "center": [0, 0],
+          "rotation": 0,
+          "wrap": [1001, 1001],
+          "format": 1023,
+          "type": 1009,
+          "encoding": 3000,
+          "minFilter": 1008,
+          "magFilter": 1006,
+          "anisotropy": 1,
+          "flipY": true,
+          "premultiplyAlpha": false,
+          "unpackAlignment": 4,
+          "image": "9C99E906-AD8E-413C-BC6F-B2E4C4BC9DBA"
+        }
+      }
+    }
+  },
+  "sliders": {
+    "frequencyA": {
+      "value": { "a": 1.8, "b": 0.9 },
+      "default": { "a": 0.9, "b": 0.9 }
+    },
+    "frequencyB": {
+      "value": { "a": 0.1, "b": 4.5 },
+      "default": { "a": 4.5, "b": 4.5 }
+    },
+    "distortion": {
+      "value": { "a": 2, "b": 1.1 },
+      "default": { "a": 1.1, "b": 1.1 }
+    },
+    "scale": {
+      "value": { "a": 1.6, "b": 0.3 },
+      "default": { "a": 0.3, "b": 0.3 }
+    },
+    "grain": { "value": { "a": 1, "b": 1 }, "default": { "a": 1, "b": 1 } },
+    "displacement": {
+      "value": { "a": 1, "b": 1 },
+      "default": { "a": 1, "b": 1 }
+    },
+    "textSize": { "value": 17, "default": 22 },
+    "imageOffsetX": { "value": 0, "default": 0 },
+    "imageOffsetY": { "value": 2, "default": 0 },
+    "textOffset": { "value": { "a": 1, "b": 1 }, "default": { "a": 1, "b": 1 } }
+  },
+  "export": {
+    "save": { "value": { "name": "Image Sequence", "key": "animation" } },
+    "loop": { "value": { "name": "Loop (A → B → A)", "key": "loop" } },
+    "duration": { "value": 30 },
+    "scale": { "value": { "name": "1x", "scale": 1 } }
+  },
+  "imageScale": { "value": 100 },
+  "fitWidth": { "value": false },
+  "fitHeight": { "value": true },
+  "buttons": { "logoPreview": { "value": false } }
+}

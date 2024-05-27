@@ -1,0 +1,268 @@
+.employee-container.corporate-container {
+  width: calc(100% - 192px);
+}
+
+.employee-container h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.add_employee_para {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #16294c;
+}
+
+.employee_rows > td {
+  padding-bottom: 20px;
+}
+
+.employee_header > th {
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-family: Sofia Pro;
+}
+
+.employee_container {
+  width: 100%;
+  color: #16294c;
+  font-family: Poppins;
+}
+
+td > h3 {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Poppins";
+}
+
+.employee_profile_pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #16294c;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+}
+
+.employee_status_active {
+  width: max-content;
+  background: #e8f2fb;
+  border-radius: 2px;
+  color: #5582a7;
+  display: flex;
+  justify-content: center;
+  padding: 2px 6px;
+}
+
+.employee_status_invite,
+.employee_status_inactive {
+  background: #f3f3f2;
+  width: max-content;
+  border-radius: 2px;
+  color: #5582a7;
+  display: flex;
+  justify-content: center;
+  padding: 2px 6px;
+}
+
+.employee_remove_btn {
+  position: relative;
+}
+
+.employee_invite_remove {
+  background: #fafafc;
+  position: absolute;
+  top: 0.5rem;
+  right: 0px;
+  opacity: 1;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.employee-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  /* width: 85%; */
+  margin-top: 0.75rem;
+}
+
+.employee-wrapper-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  background: #fbfbfb;
+  padding: 1rem;
+}
+
+.employee-wrapper-top input {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: #5d686e;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 30%;
+  border-radius: 0.2rem;
+  border: 1px solid #f3f3f2;
+  background: url("../../../Assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 1.75rem;
+  background-color: #fff;
+  flex-grow: 6;
+}
+
+.employee-wrapper-top button {
+  flex-grow: 4;
+}
+
+.employee-wrapper-bottom {
+  padding: 1rem;
+}
+.employee-wrapper-title-h3-two {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 0.8;
+}
+
+.employee-wrapper-title-h3-three {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 0.8;
+}
+
+.employee-wrapper-title-h3-four {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 0.89;
+}
+.employee-wrapper-title {
+  display: flex;
+  padding-bottom: 0.3rem;
+}
+
+.employee-wrapper-title h3 {
+  margin: 0;
+}
+
+.employee-h3-one {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+}
+
+.employee-wrapper-data {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.employee-wrapper-data h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+  flex: 1;
+}
+.employee-wrapper-data h3.zero {
+  color: #ed6b64;
+}
+
+.employee-profile {
+  display: flex;
+  flex: 1.2;
+  align-items: center;
+}
+
+.employee-name {
+  padding-left: 0.5rem;
+}
+
+.temp-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.add_employee_span {
+  font-weight: 600;
+  color: #5582a7;
+  cursor: pointer;
+}
+
+.employee-name h1 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #16294c;
+  margin-bottom: 0;
+}
+
+.employee-name p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.6rem;
+  color: #16294c;
+  margin: 0;
+}
+
+.employee-solid {
+  border-top: 1px solid #f3f3f2;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 1170px) {
+  .employee-container.corporate-container {
+    width: 100%;
+  }
+  .employee-wrapper-top,
+  .employee-wrapper-bottom {
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .employee-wrapper {
+    overflow: auto;
+  }
+  .employee-wrapper-bottom {
+    width: 480px;
+  }
+}

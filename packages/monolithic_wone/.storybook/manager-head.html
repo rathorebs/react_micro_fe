@@ -1,0 +1,14 @@
+<!-- See https://github.com/storybookjs/storybook/issues/1291#issuecomment-891379856 -->
+<link
+  id="favicon"
+  rel="shortcut icon"
+  type="image/x-icon"
+  href="/storybook/favicon.ico"
+/>
+<script>
+  if ("%NODE_ENV%" === "production") {
+    window["PREVIEW_URL"] = "/storybook/iframe.html";
+  } else {
+    document.getElementById("favicon").setAttribute("href", "/favicon.ico");
+  }
+</script>

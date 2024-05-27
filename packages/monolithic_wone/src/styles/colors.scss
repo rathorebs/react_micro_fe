@@ -1,0 +1,93 @@
+// Greyscale
+$white: #ffffff;
+$off-white: #fcfcfc;
+$light-grey: #f1f1f1;
+$grey: #c4c4c4;
+$dark-grey: #808080;
+$black: #212121;
+$dark-shade-grey: #000000;
+
+// Primary
+$cream: #eaeae0;
+$darker-cream: #e5e5dc;
+$pink: #e5c7ea;
+$blue: #7fb8ea;
+
+// Pillars
+$purple: #bec0e1;
+$dark-pink: #d6b2d9;
+$peach: #ed897f;
+$service-blue: #a3d0e3;
+$energy-blue: #1058e5;
+$resilience-purple: #e5b3ec;
+
+// Secondary
+$light-blue: #a4d0e3;
+$dark-blue: #0f57e5;
+$orange: #c55f36;
+$red: #c3405b;
+
+// Patterns
+$blue-pattern-primary: #0f57e5;
+$blue-pattern-background: #bec0e1;
+$orange-pattern-primary: #c55f36;
+$orange-pattern-background: #d6b2d9;
+$red-pattern-primary: #c3405b;
+$red-pattern-background: #ed897f;
+$pink-pattern-primary: #7ab3e5;
+$pink-pattern-background: #e5c7ea;
+
+// Others
+$auro-metal: #6c757d;
+$bunting: #16294c;
+$albescent: #f6e8d6;
+$mauve: #e5b3ec;
+$dark-grey-scroll-bg: #888888;
+$dark-grey-scroll-thumb: #555555;
+$brick-red: #bf3c57;
+
+$colors: (
+  "white": $white,
+  "off-white": $off-white,
+  "light-grey": $light-grey,
+  "grey": $grey,
+  "dark-grey": $dark-grey,
+  "black": $black,
+  "cream": $cream,
+  "darker-cream": $darker-cream,
+  "pink": $pink,
+  "blue": $blue,
+  "purple": $purple,
+  "dark-pink": $dark-pink,
+  "peach": $peach,
+  "light-blue": $light-blue,
+  "dark-blue": $dark-blue,
+  "orange": $orange,
+  "red": $red,
+  "auro-metal": $auro-metal,
+  "bunting": $bunting,
+  "albescent": $albescent,
+  "mauve": $mauve,
+  "dark-grey-scroll-bg": $dark-grey-scroll-bg,
+  "dark-grey-scroll-thumb": $dark-grey-scroll-thumb,
+  "brick-red": $brick-red,
+);
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+
+  .text-#{$name} {
+    color: $color !important;
+  }
+
+  .link-#{$name} {
+    color: $color !important;
+
+    &:hover,
+    &:focus {
+      color: darken($color, 10%) !important;
+    }
+  }
+}

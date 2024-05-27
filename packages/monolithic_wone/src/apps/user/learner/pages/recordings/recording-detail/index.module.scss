@@ -1,0 +1,113 @@
+@import "styles/global.scss";
+
+.video-container {
+  width: 100%;
+  margin-top: rem(-92px);
+  overflow: hidden;
+
+  height: rem(615px);
+  min-height: rem(615px);
+  max-height: rem(615px);
+  background: black;
+
+  .main-video {
+    margin: auto;
+    max-width: rem(1200px);
+    height: rem(615px);
+    min-height: rem(615px);
+    max-height: rem(615px);
+  }
+}
+
+.details-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-top: rem(35px);
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+
+  .description-container {
+    width: 100%;
+
+    .main-title {
+      margin-bottom: rem(14px);
+    }
+
+    .main-subtitle {
+      margin-bottom: rem(32px);
+    }
+
+    .title {
+      font-size: rem(14px);
+      font-weight: 500;
+      font-family: "Work Sans", sans-serif;
+      line-height: normal;
+      color: $dark-shade-grey;
+      margin-bottom: rem(14px);
+    }
+    .description {
+      font-size: rem(16px);
+      font-weight: normal;
+      line-height: 1.63;
+      color: $black;
+      margin: 0;
+    }
+  }
+  .material-container {
+    width: 100%;
+    .heading {
+      font-size: rem(14px);
+      font-weight: 500;
+      margin: rem(30px) rem(0px) rem(14px) rem(0px);
+      line-height: normal;
+      font-family: "Work Sans", sans-serif;
+    }
+    .material-pill {
+      display: flex;
+      gap: 12px;
+      .material-div {
+        flex: 1;
+        .materials {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: rem(18px) rem(67px) rem(9px);
+          gap: rem(6px);
+          .material-label {
+            font-size: rem(12px);
+            opacity: 0.7;
+            margin-top: rem(6px);
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  .expert-container {
+    width: 100%;
+    margin-top: rem(30px);
+    .expert-header {
+      display: flex;
+      gap: rem(8px);
+      margin-bottom: rem(11px);
+      .icon {
+        width: rem(18px);
+        height: rem(18px);
+      }
+      .title {
+        font-size: rem(16px);
+        font-weight: 500;
+        line-height: normal;
+        color: $black;
+        font-family: "Work Sans", sans-serif;
+      }
+    }
+  }
+}
+
+.feedback-container {
+  padding-left: 15rem;
+}

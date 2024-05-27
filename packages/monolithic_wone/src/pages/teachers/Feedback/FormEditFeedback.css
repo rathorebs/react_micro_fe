@@ -1,0 +1,133 @@
+.formAddReport-container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.formAddReport-wrapper {
+  width: 100%;
+  height: 109%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0px;
+  overflow-y: hidden;
+}
+
+.formAddReport-form {
+  padding: 2.25rem 1.75rem;
+  width: 100%;
+  height: 370px;
+  background: #fafafc;
+  box-shadow: 0px -4px 24px -5px rgba(22, 41, 76, 0.1);
+  border-radius: 0.2rem 0.2rem 0 0;
+  opacity: 1;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formAddReport-form-crossBtn {
+  position: absolute;
+  right: -0.4rem;
+  top: -0.4rem;
+  height: 20px;
+  width: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.formAddReport-form h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: #16294c;
+
+  align-self: center;
+}
+
+.formAddReport-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.formAddReport-title label {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.formAddReport-title input {
+  background: #ffffff;
+  border: 1px solid #f3f3f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.6rem 0;
+  padding-left: 0.5rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.formAddReport-notes {
+  display: flex;
+  flex-direction: column;
+}
+
+.formAddReport-notes label {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.formAddReport-notes textarea {
+  background: #ffffff;
+  border: 1px solid #f3f3f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px -5px #e5e5e5;
+  border-radius: 0.2rem;
+  outline: none;
+  padding-top: 0.7rem;
+  padding-left: 0.5rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #16294c;
+}
+
+.formAddReport-form Button {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #5582a7;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.35rem 0;
+}

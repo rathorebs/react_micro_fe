@@ -1,0 +1,68 @@
+.bio-elements-container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  max-width: 256px;
+  width: 256px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  .heart-beat-count {
+    img {
+      width: 19px;
+      height: 19px;
+      margin: 4px;
+    }
+  }
+  .foot-count {
+    svg {
+      width: 19px;
+      height: 19px;
+      margin: 4px;
+    }
+  }
+  .sleep-count {
+    svg {
+      width: 19px;
+      height: 19px;
+      margin: 4px;
+    }
+  }
+  span {
+    font-family: "Sofia Pro";
+    font-size: 12.8px;
+    font-weight: 500;
+    height: 19.1875px;
+    line-height: 19.2px;
+  }
+}
+.bio-elements-container-closed {
+  width: auto !important;
+  padding: 0.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .bio-elements-container {
+    left: -100%;
+    min-width: 224px;
+    max-width: 224px;
+    background-position: center 48px;
+    padding-bottom: 2.75rem;
+  }
+  .bio-elements-container-closed {
+    left: -7px !important;
+    top: 53px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bio-elements-container {
+    width: 204px !important;
+    z-index: 9;
+  }
+  .bio-elements-container-closed {
+    width: 84px !important;
+    z-index: 9;
+  }
+}

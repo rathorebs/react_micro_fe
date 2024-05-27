@@ -1,0 +1,225 @@
+.corporate-container {
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  padding: 5.5rem 1rem 2rem;
+  padding-left: 15.375rem;
+  min-height: calc(100vh - 8px);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.aupolicy-link {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  padding: 0 0 1rem 17.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .aupolicy-link {
+    padding: 0 0 1rem 0rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .corporate-container {
+    padding-left: 15.375rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .corporate-container {
+    flex-direction: column;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .corporate-container {
+    padding: 0.75rem;
+    padding-top: 4rem;
+    margin-top: 0px;
+  }
+} */
+
+/* Practitioner portal css matched from older one start here */
+.custom-practitioner.corporate-container {
+  height: auto;
+  margin-left: 0;
+  min-height: calc(100vh - 8px);
+  padding: 5.5rem 1rem 0rem 17.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  width: 100%;
+  background-color: #f3f3f2;
+}
+.custom-practitioner .tsession-calendar {
+  margin-right: 5%;
+  width: 95%;
+}
+.custom-practitioner .practitioner-page-content {
+  margin-top: 0 !important;
+  padding: 5.5rem 2.08125rem 0 1rem !important;
+}
+@media screen and (max-width: 991px) {
+  .custom-practitioner.corporate-container {
+    padding: 5.5rem 1rem 0rem 13.5rem;
+  }
+  .custom-practitioner .tsession-calendar {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .custom-practitioner.corporate-container {
+    padding: 5.5rem 1rem 0rem 1rem;
+  }
+  .custom-practitioner .practitioner-page-content {
+    margin-top: 0 !important;
+    padding: 5.5rem 1rem 0 1rem !important;
+  }
+}
+
+.custom-practitioner h3 {
+  text-transform: none !important;
+  color: #16294c;
+  font-family: Playfair Display;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.custom-practitioner .session-card .register-button {
+  background: #5582a7 !important;
+  min-width: 112px;
+  cursor: pointer;
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  font-weight: 300;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  width: 100%;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: button;
+  text-transform: none;
+  margin: 0;
+}
+.custom-practitioner .session-card .register-button.bg-orange {
+  background: #ed6b64 !important;
+}
+.custom-practitioner .session-card .register-button.disabled {
+  align-items: center;
+  background: #f3f3f2 !important;
+  border: none;
+  color: #16294c;
+  display: flex;
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 140%;
+  min-width: 176px;
+  opacity: 1;
+  outline: none;
+  padding: 0.75rem 0.5rem;
+  pointer-events: none;
+  text-align: center;
+  min-width: 112px;
+  border-radius: 0.2rem;
+  width: 100%;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: button;
+  text-transform: none;
+}
+.custom-practitioner .session-card p,
+.custom-practitioner .session-card p span {
+  font-size: 12.8px;
+}
+
+.custom-practitioner h2 {
+  text-transform: none;
+}
+.custom-practitioner .mb-left-sec h1 {
+  text-transform: none;
+  margin-bottom: 0.5rem;
+}
+.custom-practitioner .mb-left-sec .register-button {
+  max-width: 227px;
+  margin-top: 1rem;
+  background: #5582a7 !important;
+  cursor: pointer;
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  font-weight: 300;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  width: 100%;
+  color: #fff;
+}
+.custom-practitioner .mb-left-sec .register-button.bg-orange {
+  background: #ed6b64 !important;
+}
+.custom-practitioner .mb-left-sec .register-button.disabled {
+  background: #f3f3f2 !important;
+  align-items: center;
+
+  border: none;
+  color: #16294c;
+  display: flex;
+  font-family: Sofia Pro;
+  font-size: 0.7rem;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 140%;
+  min-width: 176px;
+  opacity: 1;
+  outline: none;
+  padding: 0.75rem 0.5rem;
+  pointer-events: none;
+  text-align: center;
+}
+.custom-practitioner .mb-right-sec h2 {
+  text-transform: none;
+}
+
+.custom-practitioner .people-joining-h2,
+.custom-practitioner h1 {
+  text-transform: none;
+}
+.custom-practitioner .CNavbar-options a {
+  display: flex;
+  align-items: center;
+}
+.custom-practitioner .CNavbar-options a.current,
+.custom-practitioner .CNavbar-options a:focus,
+.custom-practitioner .CNavbar-options a:hover {
+  background-color: #ed6b64 !important;
+  border-radius: 0.2rem;
+}
+.custom-practitioner .form-label {
+  margin-bottom: 0;
+}
+/* Practitioner portal css matched from older one end here */

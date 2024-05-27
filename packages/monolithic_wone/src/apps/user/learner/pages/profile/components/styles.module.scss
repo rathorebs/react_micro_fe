@@ -1,0 +1,345 @@
+@import "styles/global.scss";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+.profile-hero-container {
+  .settings-icon {
+    display: grid;
+    justify-items: end;
+    margin-bottom: rem(51.8px);
+    img {
+      cursor: pointer;
+    }
+  }
+  .profile-hero {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: rem(48px);
+    flex-direction: column;
+    .profile-data {
+      display: flex;
+      align-items: center;
+      .profile-pic {
+        min-width: rem(142px);
+        width: rem(142px);
+        height: rem(142px);
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .default-profile-pic {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          border: 5px solid $off-white;
+        }
+      }
+      .user-detail {
+        display: flex;
+        flex-direction: column;
+        margin: rem(0) rem(0px) rem(0) rem(28px);
+        .user-name {
+          font-size: rem(20px);
+          line-height: rem(26px);
+          color: $black;
+          text-transform: uppercase;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 500;
+          margin-bottom: rem(2px);
+        }
+        .member-join-detail {
+          width: rem(150px);
+          font-size: rem(12px);
+          line-height: rem(20px);
+          margin-bottom: 0;
+          color: $black;
+          opacity: 0.7;
+        }
+      }
+    }
+    .discover-div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .discover-content {
+        width: 100%;
+        .discover-header {
+          display: flex;
+          margin-top: rem(30px);
+          align-items: center;
+          h3 {
+            font-size: rem(14px);
+            text-transform: uppercase;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 500;
+            color: $dark-shade-grey;
+            margin-left: rem(6px);
+          }
+        }
+        .discover-text {
+          font-size: rem(16px);
+          margin-top: rem(18px);
+          max-width: rem(358px);
+          line-height: rem(26px);
+          width: 100%;
+        }
+      }
+      .discover-button {
+        margin-top: rem(20px);
+      }
+    }
+
+    .profile-journey {
+      margin-top: rem(50px);
+      .profile-title-div {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: rem(10px);
+        }
+      }
+
+      .profile-time-session {
+        display: flex;
+        margin-top: rem(11px);
+        .session-time-detail {
+          margin-right: rem(70px);
+          .time {
+            display: flex;
+            align-items: flex-end;
+            .time-invested {
+              font-size: rem(61.5px);
+              font-weight: 500;
+              margin-bottom: 0;
+              color: $black;
+            }
+            .hours {
+              font-size: rem(16px);
+              font-weight: normal;
+              color: $black;
+              margin-left: rem(3px);
+            }
+          }
+        }
+        .total-time-heading {
+          font-size: rem(12px);
+          font-weight: normal;
+          opacity: 0.7;
+          margin-top: rem(5px);
+          margin-bottom: 0;
+        }
+        .session-count {
+          font-size: rem(61.5px);
+          font-weight: 500;
+          margin-bottom: 0;
+          color: $black;
+        }
+        .session-heading {
+          font-size: rem(12px);
+          font-weight: normal;
+          opacity: 0.7;
+          margin-top: rem(5px);
+          margin-bottom: 0;
+          padding: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .profile-favourites {
+    margin-top: rem(50px);
+    .profile-favourite-title-div {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(18px);
+      img {
+        margin-right: rem(10px);
+      }
+
+      h3 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        margin-left: rem(6px);
+        text-transform: uppercase;
+        font-size: rem(14px);
+        font-weight: 500;
+      }
+    }
+    .profile-favourite-container {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        margin-right: rem(20px);
+      }
+    }
+  }
+}
+
+.wone-profile-goal {
+  display: flex;
+  margin-top: rem(52px);
+  margin-bottom: rem(48px);
+  gap: rem(20px);
+  flex-wrap: wrap;
+
+  .wone-goal-container {
+    width: rem(360px);
+    .wone-goal-title-div {
+      margin: rem(0px) rem(0px) rem(34px) rem(0px);
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: rem(10px);
+      }
+
+      h3 {
+        margin-left: rem(6px);
+        text-transform: uppercase;
+        font-size: rem(14px);
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+  .profile-favourite-title-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(18px);
+
+    img {
+      margin-right: rem(10px);
+    }
+
+    h3 {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      margin-left: rem(6px);
+      text-transform: uppercase;
+      font-size: rem(14px);
+      font-weight: 500;
+    }
+  }
+}
+
+.child-container {
+  padding: rem(20px) rem(20px) rem(18px) rem(18px);
+  width: rem(360px);
+  cursor: pointer;
+  color: $black;
+  .wone-goal-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .wone-goal-time-content {
+      display: flex;
+      align-items: center;
+      .wone-goal-hour {
+        font-family: "Work Sans", sans-serif;
+        font-size: rem(35.1px);
+        font-weight: 500;
+        margin-right: rem(10px);
+        margin-bottom: 0;
+      }
+      .wone-goal-subheading {
+        font-size: rem(16px);
+        font-weight: 500;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .progress-bar {
+    width: 100%;
+    height: rem(10px);
+    border-radius: rem(5px);
+    color: $brick-red;
+    background-color: $off-white !important;
+    margin: 0 0 !important;
+
+    .custom-progress {
+      height: rem(10px);
+      border-radius: rem(5px);
+      background-color: $brick-red;
+    }
+  }
+}
+
+.weekly-goal-modal {
+  .weekly-goal-modal-header {
+    border-bottom: 0;
+    width: 100%;
+    margin: 0.5rem;
+
+    h5 {
+      font-size: rem(20px);
+      line-height: rem(28px);
+      font-weight: 500;
+    }
+
+    button {
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("/Assets/icon/icon_close.svg");
+      opacity: 1;
+    }
+
+    button:focus {
+      box-shadow: none;
+    }
+  }
+
+  .weekly-goal-modal-content {
+    padding: rem(0px) rem(14px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .increment-button {
+      cursor: pointer;
+    }
+    .decrement-button {
+      cursor: pointer;
+    }
+    .value {
+      margin: rem(12px) rem(50px) rem(0px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: rem(61px);
+      }
+      p {
+        font-size: rem(12px);
+        opacity: 0.7;
+        margin: 0;
+      }
+    }
+  }
+  .modal-footer {
+    border: 0;
+    width: 100%;
+    margin-bottom: rem(24px);
+    button {
+      width: 100%;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+    }
+  }
+}
+
+.weekly-goal-modal-content {
+  border: 0;
+  border-radius: rem(20px);
+  padding: rem(8px);
+}

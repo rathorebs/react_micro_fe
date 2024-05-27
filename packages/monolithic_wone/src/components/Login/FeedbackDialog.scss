@@ -1,0 +1,142 @@
+.feedback-dialog {
+  border-radius: 0.5rem;
+
+  .modal-content {
+    border-radius: 0.5rem;
+    background: url("../../Assets/retake_bg.svg") center -36px no-repeat #ffffff;
+    background-size: 140px;
+  }
+
+  h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: #16294c;
+    text-align: center;
+    padding: 5rem 0.5rem 0rem 0.5rem;
+    margin-bottom: 0;
+  }
+
+  label {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 140%;
+    text-align: center;
+    color: #16294c;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    &.feedback-counter{
+      display: block;
+      text-align: right;
+    }
+  }
+
+  .modal-custom-header {
+    position: relative;
+    border-radius: 0.4rem 0.4rem 0 0;
+
+    .close-btn-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: #ed6b64;
+      opacity: 1;
+      margin: 1.2rem;
+      padding: 0 0;
+      position: absolute;
+      right: 0;
+      z-index: 3;
+
+      img {
+        height: 13px;
+        width: 13px;
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .feedback-body-container {
+    width: 100%;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 0 auto;
+    textarea {
+      &.form-control {
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        line-height: 140%;
+        color: #000;
+        height: 100px;
+      }
+    }
+    .success-message{
+      font-family: "Sofia Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 140%;
+      color: #16294c;
+      text-align: center;
+      padding: 4rem 0.5rem 4rem 0.5rem;
+      margin-bottom: 0;
+    }
+    .error-message{
+      font-family: "Sofia Pro";
+      font-style: normal;
+      color: red;
+      font-size: 0.8rem;
+    }
+  }
+
+  .dialog-feedback-btn {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background: #ed6b64;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem auto;
+    border: none;
+  }
+
+  .form-group-container {
+    .form-check-input {
+      margin-top: 0.5rem;
+      &:checked[type=checkbox] {
+        background-color: #1B294A;
+      }
+    }
+  }
+
+  .modal-footer {
+    padding: 0.6rem 1rem;
+  }
+  .spinner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .custom-spinner{
+      position: absolute;
+      top:10%;
+    }
+  }
+  
+}

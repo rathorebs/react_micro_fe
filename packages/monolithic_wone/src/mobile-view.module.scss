@@ -1,0 +1,72 @@
+@import "styles/global.scss";
+.mobile-view-container {
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  h6 {
+    font-family: "Work Sans", sans-serif;
+    font-size: rem(33px);
+    margin: 0 0;
+    padding: 0 0 rem(27px) 0;
+    text-align: center;
+    line-height: rem(28px);
+    color: $black;
+    line-height: normal;
+  }
+  p {
+    font-family: "Bitter", serif;
+    font-size: rem(20px);
+    text-align: center;
+    margin: 0 0;
+    color: $black;
+  }
+  .mobile-view-header {
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  .mobile-view-body {
+    padding: 0rem 4rem;
+  }
+  .mobile-view-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto rem(27px) auto;
+    width: rem(127px);
+    height: rem(127px);
+    background-color: $black;
+    border-radius: rem(20px);
+    svg {
+      width: 100px;
+    }
+  }
+  .mobile-view-footer {
+    padding: rem(27px) 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobile-view-logo-icons {
+    width: 100px;
+    margin: 0px 0;
+  }
+  .app-store-icons {
+    width: 150px;
+    margin: 0px 0 20px 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .mobile-view-container {
+    justify-content: start;
+    height: 100%;
+  }
+}

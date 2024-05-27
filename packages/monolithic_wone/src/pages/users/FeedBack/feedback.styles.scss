@@ -1,0 +1,387 @@
+@import "styles/global.scss";
+
+$base-color: #16294c;
+$white-color: #ffffff;
+$dull-white-color: #e8f2fb;
+$light-white-color: #f3f3f2;
+
+.FeedbackByStudentAfterVideo-container {
+  width: 100%;
+  height: 100vh;
+  // background-color: $base-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.FeedbackByStudentAfterVideo-message-window {
+  width: 503px;
+  height: 620px;
+  background-color: $white-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 1.5rem 0;
+
+  border-radius: rem(20px);
+  box-shadow: 0 0.75rem 1.5rem 0 rgb(33 33 33 / 13%);
+}
+.FeedbackByStudentAfterVideo-progressor {
+  width: 100%;
+  p {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $base-color;
+    margin: 0 0 0 0;
+  }
+  .progress {
+    max-width: 100%;
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+  }
+}
+.FeedbackByStudentAfterVideo-chat {
+  hr {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-end;
+  padding: 0 2rem;
+  width: 100%;
+  overflow-y: auto;
+  .session-biometric {
+    border-radius: rem(20px);
+    border: 1px solid $dark-shade-grey;
+    display: flex;
+    flex-direction: column;
+    padding: rem(15px) rem(20px);
+    margin-top: rem(30px);
+    .biometric-header {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: rem(10px);
+      // margin-bottom: rem(20px);
+
+      .icon {
+        flex-grow: 0;
+      }
+
+      .label {
+        flex-grow: 0;
+        width: max-content;
+        margin: 0;
+        font-family: "Work Sans", sans-serif;
+        font-size: rem(12px);
+        font-weight: 500;
+        line-height: rem(26px);
+        color: $dark-shade-grey;
+        text-transform: uppercase;
+      }
+    }
+    p {
+      font-size: rem(12px);
+      font-weight: 500;
+      line-height: rem(20px);
+      color: $black;
+      margin: 0;
+    }
+  }
+}
+.FeedbackByStudentAfterVideo-teacher-message {
+  background-color: $dull-white-color;
+  padding: 0.5rem 1rem;
+  max-width: 100%;
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+  margin-left: 0.8rem;
+  flex: 1;
+  p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    color: $base-color;
+    margin: 0;
+    strong {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  }
+}
+.FeedbackByStudentAfterVideo-student-emoji {
+  margin-top: 1.5rem;
+  display: flex;
+  margin-left: 0.8rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.moods-emoji {
+  width: 56px;
+  height: 56px;
+  background: $light-white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-left: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    background-color: #d6d6d6;
+  }
+}
+
+.expectations {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: right;
+  color: #5d686e;
+  width: auto;
+  padding: 0.5rem 1rem;
+  background: $light-white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    background-color: #d6d6d6;
+  }
+}
+
+.FeedbackByStudentAfterVideo-student-expectations {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.75rem;
+  align-items: flex-end;
+}
+
+.SecondMessageWindow-expectations {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  text-align: right;
+  color: #16294c;
+  width: auto;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  background: $light-white-color;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-left: 3.1rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+  p {
+    margin-bottom: 0;
+    word-break: break-word;
+  }
+}
+.SecondMessageWindow-chat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin-right: 0;
+  input {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.85rem;
+    line-height: 140%;
+    color: #5d686e;
+    width: 357px;
+    max-width: 100%;
+    height: 78px;
+    background: #ffffff;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    margin: 1.5rem 0 0 0;
+    margin-left: 0;
+    padding: 0.5rem;
+  }
+  textarea {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.85rem;
+    line-height: 140%;
+    color: #5d686e;
+    width: 357px;
+    max-width: 100%;
+    height: 78px;
+    background: #ffffff;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    margin: 1.5rem 0 0 0;
+    margin-left: 0;
+    padding: 0.5rem;
+  }
+  button {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #5582a7;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.4rem;
+    margin: 1.5rem 1rem;
+    max-width: calc(100% - 40px);
+  }
+}
+
+.SecondMessageWindow-student-aboutTeacher {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  background-color: $light-white-color;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 1rem 0.5rem;
+  margin-left: 2.8rem;
+}
+.SecondMessageWindow-student-mood {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 0.5rem;
+  padding: 0 0.25rem;
+  p {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 140%;
+    text-align: center;
+    color: #5d686e;
+    padding: 0.15rem;
+    margin: 0 0.15rem;
+    border-radius: 0.25rem;
+    &:active {
+      color: #5582a7;
+    }
+  }
+}
+.lastMessageWindow-button {
+  width: 100%;
+  button {
+    margin: 3.6rem auto 0 auto;
+    width: 256px;
+  }
+}
+.feedbackBtn {
+  cursor: pointer;
+  &:hover {
+    color: #5582a7;
+  }
+}
+.feedbackBtn.active {
+  background-color: transparent;
+  color: #5582a7;
+  font-weight: 600;
+}
+.message-box {
+  margin-top: 1.5rem;
+}
+.FeedbackByStudentAvatar {
+  background-image: url("../../../Assets/images/avatar/avatar.jpg");
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  background-color: #eee;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+@media screen and (max-width: 500px) {
+  .SecondMessageWindow-student-aboutTeacher {
+    max-width: 232px;
+    height: auto;
+  }
+  .SecondMessageWindow-student-mood {
+    grid-template-columns: auto auto;
+  }
+  .SecondMessageWindow-chat {
+    input {
+      height: auto;
+      min-height: 80px;
+    }
+    textarea {
+      height: auto;
+      min-height: 80px;
+    }
+  }
+}
+@media screen and (max-height: 650px) {
+  .FeedbackByStudentAfterVideo-container {
+    align-items: flex-start;
+  }
+  .FeedbackByStudentAfterVideo-message-window {
+    align-items: flex-start;
+    padding: 0.75rem 0;
+    height: 100%;
+  }
+  .FeedbackByStudentAfterVideo-progressor {
+    .progress {
+      margin-top: 0.75rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .FeedbackByStudentAfterVideo-chat {
+    padding: 0 1rem;
+    // width: calc(100% - 40px);
+    width: 100%;
+    .expectations {
+      width: auto;
+      padding: 0.5rem 1rem;
+    }
+    .SecondMessageWindow-student-aboutTeacher {
+      width: 224px;
+      margin-left: 0;
+      padding: 0.5rem;
+    }
+  }
+  .moods-emoji {
+    width: 36px;
+    height: 36px;
+    margin-left: 0.5rem;
+  }
+  .FeedbackByStudentAfterVideo-teacher-message {
+    p {
+      font-size: 0.8rem;
+      line-height: 24px;
+    }
+  }
+}

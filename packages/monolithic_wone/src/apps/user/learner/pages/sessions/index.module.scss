@@ -1,0 +1,49 @@
+@import "styles/colors.scss";
+@import "styles/global.scss";
+
+.page-title {
+  display: flex;
+  gap: rem(9px);
+  margin-bottom: rem(18px);
+
+  .heading {
+    color: $dark-shade-grey;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.content-list-label {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: rem(20px);
+  color: $dark-shade-grey;
+  margin: 3rem 0 0 0;
+}
+
+.search-container {
+  margin-bottom: rem(18px);
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: rem(28px);
+}
+
+.no-results {
+  text-align: center;
+
+  h3 {
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: rem(20px);
+  }
+
+  p {
+    margin: auto;
+    width: rem(292px);
+    color: $dark-grey;
+  }
+}

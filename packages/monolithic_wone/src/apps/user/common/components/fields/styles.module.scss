@@ -1,0 +1,141 @@
+@import "styles/global.scss";
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(30px) rem(33px);
+  width: rem(360px);
+  height: rem(80px);
+  border-radius: rem(20px);
+  .switch-label {
+    margin: 0;
+    font-size: rem(16px);
+    text-transform: uppercase;
+    color: $black;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+  }
+  .switch-label-active {
+    @extend .switch-label;
+    opacity: 0.5;
+  }
+  .switch-item {
+    width: 55px !important;
+    height: 30px !important;
+    border-radius: 20px !important;
+    background-color: rgba(33, 33, 33, 0.1) !important;
+    border: rgba(33, 33, 33, 0.1) !important;
+  }
+}
+
+.input-container {
+  position: relative;
+  background-color: $off-white;
+  border-radius: rem(10px);
+  margin: 0 0 rem(15px) 0;
+  display: flex;
+  align-items: center;
+  .icon-wrapper {
+    display: inline-block;
+    position: absolute;
+    left: rem(12px);
+    //top: rem(18px);
+  }
+  .icon-calendar {
+    display: inline-block;
+    position: absolute;
+    right: rem(15px);
+    top: rem(15px);
+    z-index: 0;
+    img {
+      width: 90%;
+    }
+  }
+  .icon-wrapper-password-state {
+    display: inline-block;
+    position: absolute;
+    right: rem(12px);
+    top: rem(18px);
+    cursor: pointer;
+    img {
+      width: rem(24px);
+      height: rem(24px);
+    }
+  }
+  .input {
+    color: $black;
+    font-size: rem(14px);
+    padding: rem(15px) rem(15px) rem(15px) rem(45px);
+    margin: 0 0;
+    border: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+
+    /* &::placeholder {
+      color: rgba(0, 0, 0, 1);
+    } */
+  }
+  .input-birthday {
+    @extend .input;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 1);
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 0.8rem;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+    }
+  }
+  .input-select {
+    @extend .input;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.6) !important;
+    .option-placeholder {
+      color: rgba(0, 0, 0, 0.6) !important;
+      font-size: 0.8rem;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  .inputPassword {
+    @extend .input;
+    padding: rem(15px) rem(45px) rem(15px) rem(45px);
+  }
+  .inputFieldPassword {
+    @extend .input;
+    padding: rem(15px) rem(45px) rem(15px) rem(45px);
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    width: 100%;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+  &.form-floating {
+    display: none;
+    label {
+      font-family: "Work Sans", sans-serif !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1rem 0.75rem;
+      overflow: hidden;
+      text-align: start;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+      color: $black;
+    }
+  }
+}
+.input-password-container {
+  @extend .input-container;
+}

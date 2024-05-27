@@ -1,0 +1,203 @@
+[
+  {
+    "id": 52,
+    "name": "MyFitnessPal",
+    "slug": "my_fitness_pal",
+    "description": "Weight loss and fitness application",
+    "logo": "https://storage.googleapis.com/vital-assets/my_fitness_pal.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 8,
+    "name": "Wahoo",
+    "slug": "wahoo",
+    "description": "Indoor Bike trainers",
+    "logo": "https://storage.googleapis.com/vital-assets/wahoo.png",
+    "oauth_url": "https://api.wahooligan.com/oauth/authorize?response_type=code&client_id=LPK8xBHCqYM9LUxV136PSwAr9sav3L7-XSovV7G_B6s&redirect_uri=https%3A%2F%2Fapi.sandbox.eu.tryvital.io%2Fv2%2Flink%2Fconnect%2Fwahoo&state=eyJ1c2VyX2lkIjogIjA4MDQ0NjA5LTlhYjItNDU1NC1iNzQyLWU2NTU0NzIwYWU2NSIsICJ0ZWFtX2lkIjogImE4MmM2YTA5LTJmNmItNDMwOC1hZmJlLTAyM2M4ZTk0NmZhZiIsICJzYWx0IjogIjFmMGUwMiIsICJleHBpcmVzIjogMTY2OTEyMjc2Ny4xMjc4MzM2fcTMs-0LU2FNqt2w8vDiu2DKpEJKxaTzC0vfKRUTgA1W&scope=email%20user_read%20workouts_read%20offline_data",
+    "auth_type": "oauth",
+    "form_components": {}
+  },
+  {
+    "id": 15,
+    "name": "Beurer",
+    "slug": "beurer_api",
+    "description": "Blood pressure and glucose.",
+    "logo": "https://storage.googleapis.com/vital-assets/beurer.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 25,
+    "name": "Dexcom",
+    "slug": "dexcom",
+    "description": "Continuous Glucose Monitor",
+    "logo": "https://storage.googleapis.com/vital-assets/dexcom.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 11,
+    "name": "Eight Sleep",
+    "slug": "eight_sleep",
+    "description": "Smart Mattress",
+    "logo": "https://storage.googleapis.com/vital-assets/eightsleep.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 3,
+    "name": "Fitbit",
+    "slug": "fitbit",
+    "description": "Activity Trackers",
+    "logo": "https://storage.googleapis.com/vital-assets/fitbit.png",
+    "oauth_url": "https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=2388MG&redirect_uri=https%3A%2F%2Fapi.sandbox.eu.tryvital.io%2Fv2%2Flink%2Fconnect%2Ffitbit&state=eyJ1c2VyX2lkIjogIjA4MDQ0NjA5LTlhYjItNDU1NC1iNzQyLWU2NTU0NzIwYWU2NSIsICJ0ZWFtX2lkIjogImE4MmM2YTA5LTJmNmItNDMwOC1hZmJlLTAyM2M4ZTk0NmZhZiIsICJzYWx0IjogIjFmMGUwMiIsICJleHBpcmVzIjogMTY2OTEyMjc2Ny4xMjc4MzM2fcTMs-0LU2FNqt2w8vDiu2DKpEJKxaTzC0vfKRUTgA1W&scope=activity+heartrate+location+nutrition+profile+settings+sleep+social+weight",
+    "auth_type": "oauth",
+    "form_components": {}
+  },
+  {
+    "id": 10,
+    "name": "Freestyle Libre",
+    "slug": "freestyle_libre",
+    "description": "Continuous Glucose Monitor",
+    "logo": "https://storage.googleapis.com/vital-assets/freestyle.png",
+    "oauth_url": null,
+    "auth_type": "email",
+    "form_components": {
+      "instructions": [
+        "Head to the libre app menu and tap Connected Apps",
+        "Tap Libre view and then connect to a practice and enter `tryVital-sandbox` in the practice ID",
+        "Enter your Freestyle Libre account email and region below. Syncing can take up to a few hours, due to Libre's servers"
+      ],
+      "inputs": [
+        {
+          "type": "text",
+          "label": "Email",
+          "value": "email"
+        },
+        {
+          "type": "select",
+          "label": "Country/Region",
+          "options": [
+            "eu",
+            "sg",
+            "au",
+            "de"
+          ],
+          "value": "eu",
+          "names": {
+            "us": "United States",
+            "eu": "Europe",
+            "sg": "Singapore",
+            "de": "Germany",
+            "au": "Australia"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Garmin",
+    "slug": "garmin",
+    "description": "Fitness watches",
+    "logo": "https://storage.googleapis.com/vital-assets/garmin.png",
+    "oauth_url": "https://connect.garmin.com/oauthConfirm?oauth_token=5166c419-a371-4792-8656-f18d44bb8adc&oauth_callback=https%3A%2F%2Fapi.sandbox.eu.tryvital.io%2Fv2%2Flink%2Fconnect%2Fgarmin%3Fstate%3DeyJ1c2VyX2lkIjogIjA4MDQ0NjA5LTlhYjItNDU1NC1iNzQyLWU2NTU0NzIwYWU2NSIsICJ0ZWFtX2lkIjogImE4MmM2YTA5LTJmNmItNDMwOC1hZmJlLTAyM2M4ZTk0NmZhZiIsICJzYWx0IjogIjFmMGUwMiIsICJleHBpcmVzIjogMTY2OTEyMjc2Ny4xMjc4MzM2fcTMs-0LU2FNqt2w8vDiu2DKpEJKxaTzC0vfKRUTgA1W",
+    "auth_type": "oauth",
+    "form_components": {}
+  },
+  {
+    "id": 21,
+    "name": "Google Fit",
+    "slug": "google_fit",
+    "description": "Coaching you to a healthier and more active life",
+    "logo": "https://storage.googleapis.com/vital-assets/googlefit.png",
+    "oauth_url": "https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=626866049790-v26dajmdd7vvva4s1mhjtkjf5qg0duak.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.sandbox.eu.tryvital.io%2Fv2%2Flink%2Fconnect%2Fgoogle_fit&scope=openid+email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffitness.activity.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffitness.body.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffitness.sleep.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffitness.blood_glucose.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffitness.blood_pressure.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffitness.heart_rate.read&state=eyJ1c2VyX2lkIjogIjA4MDQ0NjA5LTlhYjItNDU1NC1iNzQyLWU2NTU0NzIwYWU2NSIsICJ0ZWFtX2lkIjogImE4MmM2YTA5LTJmNmItNDMwOC1hZmJlLTAyM2M4ZTk0NmZhZiIsICJzYWx0IjogIjFmMGUwMiIsICJleHBpcmVzIjogMTY2OTEyMjc2Ny4xMjc4MzM2fcTMs-0LU2FNqt2w8vDiu2DKpEJKxaTzC0vfKRUTgA1W&access_type=offline",
+    "auth_type": "oauth",
+    "form_components": {}
+  },
+  {
+    "id": 51,
+    "name": "Hammerhead",
+    "slug": "hammerhead",
+    "description": "Next generation cycling computers",
+    "logo": "https://storage.googleapis.com/vital-assets/hammerhead.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 1,
+    "name": "Oura",
+    "slug": "oura",
+    "description": "Smart sleep tracking ring",
+    "logo": "https://storage.googleapis.com/vital-assets/oura.png",
+    "oauth_url": "https://cloud.ouraring.com/oauth/authorize?response_type=code&client_id=F3FPCQ5DUIBROG2V&redirect_uri=https%3A%2F%2Fapi.sandbox.eu.tryvital.io%2Fv2%2Flink%2Fconnect%2Foura&state=eyJ1c2VyX2lkIjogIjA4MDQ0NjA5LTlhYjItNDU1NC1iNzQyLWU2NTU0NzIwYWU2NSIsICJ0ZWFtX2lkIjogImE4MmM2YTA5LTJmNmItNDMwOC1hZmJlLTAyM2M4ZTk0NmZhZiIsICJzYWx0IjogIjFmMGUwMiIsICJleHBpcmVzIjogMTY2OTEyMjc2Ny4xMjc4MzM2fcTMs-0LU2FNqt2w8vDiu2DKpEJKxaTzC0vfKRUTgA1W",
+    "auth_type": "oauth",
+    "form_components": {}
+  },
+  {
+    "id": 7,
+    "name": "Peloton",
+    "slug": "peloton",
+    "description": "Popular cycling equipment",
+    "logo": "https://storage.googleapis.com/vital-assets/peloton.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 6,
+    "name": "Renpho",
+    "slug": "renpho",
+    "description": "Body Fat Scales",
+    "logo": "https://storage.googleapis.com/vital-assets/renpho.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 5,
+    "name": "Strava",
+    "slug": "strava",
+    "description": "Activity Social Network",
+    "logo": "https://storage.googleapis.com/vital-assets/strava.png",
+    "oauth_url": "https://www.strava.com/oauth/authorize?response_type=code&client_id=79165&redirect_uri=https%3A%2F%2Fapi.sandbox.eu.tryvital.io%2Fv2%2Flink%2Fconnect%2Fstrava&scope=activity%3Aread_all%2Cactivity%3Awrite%2Cprofile%3Awrite%2Cprofile%3Aread_all&state=eyJ1c2VyX2lkIjogIjA4MDQ0NjA5LTlhYjItNDU1NC1iNzQyLWU2NTU0NzIwYWU2NSIsICJ0ZWFtX2lkIjogImE4MmM2YTA5LTJmNmItNDMwOC1hZmJlLTAyM2M4ZTk0NmZhZiIsICJzYWx0IjogIjFmMGUwMiIsICJleHBpcmVzIjogMTY2OTEyMjc2Ny4xMjc4MzM2fcTMs-0LU2FNqt2w8vDiu2DKpEJKxaTzC0vfKRUTgA1W",
+    "auth_type": "oauth",
+    "form_components": {}
+  },
+  {
+    "id": 4,
+    "name": "Whoop",
+    "slug": "whoop",
+    "description": "Smart Activity Watches",
+    "logo": "https://storage.googleapis.com/vital-assets/whoop.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  },
+  {
+    "id": 13,
+    "name": "Withings",
+    "slug": "withings",
+    "description": "Smart Scales, Watches and Health Monitors",
+    "logo": "https://storage.googleapis.com/vital-assets/withings.png",
+    "oauth_url": "https://account.withings.com/oauth2_user/authorize2?response_type=code&client_id=f4444970a6e21c9666e4222d340e6e14565096c5f2f5864f38400a195c2046c5&redirect_uri=https%3A%2F%2Fapi.sandbox.eu.tryvital.io%2Fv2%2Flink%2Fconnect%2Fwithings&scope=user.activity%2Cuser.metrics%2Cuser.sleepevents&state=eyJ1c2VyX2lkIjogIjA4MDQ0NjA5LTlhYjItNDU1NC1iNzQyLWU2NTU0NzIwYWU2NSIsICJ0ZWFtX2lkIjogImE4MmM2YTA5LTJmNmItNDMwOC1hZmJlLTAyM2M4ZTk0NmZhZiIsICJzYWx0IjogIjFmMGUwMiIsICJleHBpcmVzIjogMTY2OTEyMjc2Ny4xMjc4MzM2fcTMs-0LU2FNqt2w8vDiu2DKpEJKxaTzC0vfKRUTgA1W",
+    "auth_type": "oauth",
+    "form_components": {}
+  },
+  {
+    "id": 9,
+    "name": "Zwift",
+    "slug": "zwift",
+    "description": "Virtual Cycling App",
+    "logo": "https://storage.googleapis.com/vital-assets/zwift.png",
+    "oauth_url": null,
+    "auth_type": "password",
+    "form_components": {}
+  }
+]

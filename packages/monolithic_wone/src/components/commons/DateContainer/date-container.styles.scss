@@ -1,0 +1,53 @@
+@import "../../../variables";
+
+.calendar-month {
+  p {
+    font-family: Sofia Pro;
+    font-size: 0.7rem;
+    line-height: 19.5px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    color: $bunting-color;
+  }
+}
+
+.teacher-monthName-p,
+.tsession-months {
+  border: none;
+  color: $bunting-color;
+  font-family: Sofia Pro;
+  letter-spacing: 0.04em;
+}
+
+.week-days-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .week-days {
+    border-radius: 0.1rem;
+    padding: 0.4rem 0.5rem;
+    &.active {
+      background-color: $burnt-sienna-color;
+      .day,
+      .date {
+        color: $white-color;
+      }
+    }
+  }
+
+  .day {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: $bunting-color;
+  }
+  .date {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $bunting-color;
+  }
+}

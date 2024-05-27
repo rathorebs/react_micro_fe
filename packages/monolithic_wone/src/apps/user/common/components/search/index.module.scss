@@ -1,0 +1,43 @@
+@import "styles/global.scss";
+
+.search-container {
+  width: 100%;
+
+  form {
+    width: inherit;
+    height: rem(60px);
+
+    display: flex;
+    align-items: center;
+    gap: rem(7px);
+
+    border: 0;
+    border-radius: rem(10px);
+    box-shadow: 0 rem(12px) rem(24px) rem(0) rgba(33, 33, 33, 0.13);
+    background-color: rgba(255, 255, 255, 0.85);
+
+    padding: 0 rem(12px) 0 rem(12px);
+
+    input {
+      border: 0;
+      border-radius: rem(10px);
+      height: 100%;
+      width: 100%;
+      background: transparent;
+
+      font-family: "Work Sans", sans-serif;
+      font-size: rem(20px);
+      opacity: 0.6;
+      color: $dark-shade-grey;
+
+      &:focus {
+        outline: 0;
+        border: 0;
+      }
+    }
+
+    input[type="search"]::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+  }
+}

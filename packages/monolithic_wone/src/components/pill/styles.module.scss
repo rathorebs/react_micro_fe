@@ -1,0 +1,38 @@
+@import "styles/global.scss";
+
+.pill {
+  font-family: "Work Sans", sans-serif;
+  font-size: rem(12px);
+  line-height: rem(12px);
+  font-weight: 500;
+  color: $white !important;
+  padding: rem(6px) rem(8px);
+  border-radius: rem(30px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.energy {
+  background: $energy-blue !important;
+  color: $white !important;
+}
+
+.resilience,
+.mindfulness {
+  background: $resilience-purple !important;
+  color: $black !important;
+}
+
+.activity {
+  background: $energy-blue !important;
+  color: $white !important;
+}
+
+.yoga,
+.meditation,
+.nutrition,
+.science,
+.taster {
+  background: $service-blue !important;
+  color: $black !important;
+}

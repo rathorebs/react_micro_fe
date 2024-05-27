@@ -1,0 +1,330 @@
+@import "../../../../global.scss";
+
+.wone-index-details-container {
+  padding: 1.1rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  background: url("../../../../Assets/wone_index_bg.svg") 100% 0px no-repeat;
+
+  .wone-detail-header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .wone-detai-pb-container {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      border-radius: 50%;
+      //background-color: #fff;
+
+      .svg {
+        stroke-linecap: round;
+
+        circle {
+          stroke-width: 6.5px;
+        }
+        .svg-circle-bg{
+          fill:#fff;
+        }
+      }
+
+      .svg-circle-text {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        color: $bunting-color;
+        position: relative;
+        top: -7.5rem;
+
+        sup {
+          font-family: "Playfair Display";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: $bunting-color;
+          top: -0.75rem;
+          left: 0.25rem;
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+
+    h1 {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 140%;
+      color: $bunting-color;
+      padding-left: 1rem;
+
+      span {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 140%;
+        color: $bunting-color;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .wone-detail-body {
+    margin-top: 1.75rem;
+
+    h2 {
+      font-family: "Sofia Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 140%;
+      color: $fiord-color;
+    }
+
+    p {
+      font-family: "Sofia Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.7rem;
+      line-height: 140%;
+      color: $bunting-color;
+      margin-bottom: 0;
+      white-space: pre-line;
+    }
+
+    h3 {
+      font-family: "Sofia Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.7rem;
+      line-height: 140%;
+      color: $bunting-color;
+      margin-top: 0.75rem;
+    }
+
+    .about-your-score {
+      @extend .white-box;
+    }
+
+
+
+    .recommended-content {
+      @extend .white-box;
+
+      a {
+        color: #16294C;
+
+        &:link {
+          font-weight: bold;
+        }
+
+        &:visited {
+          font-weight: bold;
+        }
+
+      }
+
+      @media screen and (max-width: 992px) {
+        margin-top: 1.25rem;
+      }
+
+      .videos-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        -moz-osx-font-smoothing: grayscale;
+        width: 100%;
+
+        .video-card {
+          backface-visibility: hidden;
+          transform: translateZ(0);
+          transition: transform 0.25s ease-out;
+          background-color: $white-color;
+          box-shadow: 0px 4px 24px -5px #e5e5e5;
+          cursor: pointer;
+          width: 48%;
+
+          .video-thumb {
+            width: 100%;
+            height: 131px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            .image {
+              width: 100%;
+              height: 95%;
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 0.25rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .play-icon {
+                background: #ed6b64;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 24px -5px #e5e5e5;
+              }
+            }
+          }
+
+          .video-thumb-desc {
+            padding: 0 0.5rem 0.5rem 0.5rem;
+
+            h5 {
+              font-family: "Sofia Pro";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 0.7rem;
+              line-height: 140%;
+              color: $bunting-color;
+            }
+
+            p {
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 0.6rem;
+              line-height: 140%;
+              color: $fiord-color;
+            }
+          }
+
+
+        }
+      }
+
+      .article-container {
+        .articles {
+          background-color: $white-color;
+          box-shadow: 0px 4px 24px -5px #e5e5e5;
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin: 0 0 0.8rem 0;
+
+          .article-thumb {
+            width: 67px;
+            height: 67px;
+
+            img {
+              width: 67px;
+              height: 100%;
+              object-fit: cover;
+
+            }
+          }
+
+          .article-desc {
+            padding: 0.5rem 0.5rem;
+
+            h6 {
+              font-family: "Sofia Pro";
+              font-size: 0.7rem;
+              line-height: 140%;
+              color: $bunting-color;
+            }
+
+            p {
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 0.6rem;
+              line-height: 140%;
+              color: $fiord-color;
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+    h4 {
+      font-family: "Sofia Pro";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 140%;
+      color: $bunting-color;
+      padding: 0 0 0 1rem;
+    }
+
+    &.container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .recommended-live-sessions {
+    @extend .white-box;
+    margin-top: 1.25rem;
+
+    .rls-date-time {
+      font-family: 'Sofia Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.7rem;
+      line-height: 140%;
+      color: $fiord-color;
+      margin: 1rem 0 0.25rem 0;
+    }
+
+    .rl-session {
+      background-color: $white-color;
+      box-shadow: 0px 4px 24px -5px #e5e5e5;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .rls-thumb {
+        width: 56px;
+        height: 56px;
+
+        img {
+          width: 56px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .rls-desc {
+        padding: 0.5rem 0.5rem;
+
+        h6 {
+          font-family: "Sofia Pro";
+          font-size: 0.7rem;
+          line-height: 140%;
+          color: $bunting-color;
+          margin-top: 0.25rem;
+        }
+
+        p {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 0.6rem;
+          line-height: 140%;
+          color: $fiord-color;
+        }
+      }
+    }
+  }
+}

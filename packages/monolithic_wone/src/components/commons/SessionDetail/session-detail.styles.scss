@@ -1,0 +1,114 @@
+@import "../../../variables";
+
+.bg-container {
+  display: block;
+  min-height: 288px;
+  max-height: 288px;
+  background-color: $white-color;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0;
+  align-items: center;
+  position: relative;
+  border-radius: 0.4rem 0.4rem 0 0;
+  img {
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+}
+.mb-left-sec {
+  p {
+    &.model-session-details {
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.7rem;
+      line-height: 140%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-variant: small-caps;
+      color: $fiord-color;
+    }
+  }
+  h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 140%;
+    color: $bunting-color;
+  }
+  .model-session-detail-time {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 140%;
+    text-align: left;
+    color: $fiord-color;
+    @media only screen and (max-width: 567px) {
+      font-size: 0.7rem;
+    }
+  }
+  button {
+    max-width: 227px;
+    margin-top: 1rem;
+  }
+  .remove-plan {
+    color: $wedgewood-color;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+.mb-right-sec {
+  h2 {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.7rem;
+    line-height: 140%;
+    color: $bunting-color;
+    margin: 0 0 0 0;
+    @media only screen and (max-width: 567px) {
+      margin: 0.75rem 0 0 0;
+    }
+  }
+  p {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.7rem;
+    line-height: 140%;
+    color: #5c686d;
+    margin: 0.2rem 0;
+  }
+  .book-blocks {
+    border-top: 1px solid rgba(85, 130, 166, 0.15);
+    border-bottom: 1px solid rgba(85, 130, 166, 0.15);
+    padding: 0.5rem 0;
+    margin-top: 0.75rem;
+    color: #152a4a;
+    font-weight: normal;
+  }
+}
+.model-body-inner {
+  padding: 1.6rem 1.6rem;
+}
+
+.people-joining-h2 {
+  color: $bunting-color;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 0;
+  padding-top: 0.6rem;
+}
+.tsession-people-joining {
+  background-color: $white-color;
+  padding: 0 0 0.4rem 0;
+  .people-joining-image {
+    height: 60px;
+    margin: 0.4rem;
+    object-fit: cover;
+    width: 60px;
+  }
+}
