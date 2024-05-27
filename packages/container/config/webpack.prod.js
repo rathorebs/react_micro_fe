@@ -11,7 +11,6 @@ const prodConfig = {
     filename: "[name].[contenthash].js",
     publicPath: "/container/latest/",
   },
-  extensions: [".tsx", ".ts", ".jsx", ".js", ".graphql"],
   plugins: [
     new ModuleFederationPlugin({
       name: "container",
