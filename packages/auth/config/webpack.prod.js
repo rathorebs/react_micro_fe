@@ -9,7 +9,6 @@ const prodConfig = {
     filename: "[name].[contenthash].js",
     publicPath: "/auth/latest/",
   },
-  extensions: [".tsx", ".ts", ".jsx", ".js", ".graphql"],
   plugins: [
     new ModuleFederationPlugin({
       name: "auth",
