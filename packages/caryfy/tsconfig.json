@@ -1,9 +1,14 @@
+
 {
   "compilerOptions": {
+    "target": "ES5",
+    "module": "ES6",
+    "strict": true,
     "jsx": "react",
-    "baseUrl": "src",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "strict": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"]
 }

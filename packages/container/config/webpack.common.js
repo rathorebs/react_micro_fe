@@ -4,6 +4,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: "ts-loader",
+      },
+      {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
@@ -12,6 +17,13 @@ module.exports = {
             presets: ["@babel/preset-react", "@babel/preset-env"],
             plugins: ["@babel/plugin-transform-runtime"],
           },
+        },
+      },
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "graphql-tag/loader",
         },
       },
       {

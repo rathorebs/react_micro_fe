@@ -11,15 +11,14 @@ import Container from "@material-ui/core/Container";
 import MaterialLink from "@material-ui/core/Link";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import { API_CALL } from "../utility/graphQl/query";
-
+import { API_CALL } from "../queries/query";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <MaterialLink component={Link} to="/" color="inherit">
-        Your Website
+        Your CaryFy Website
       </MaterialLink>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -70,7 +69,7 @@ export default function Album() {
   const classes = useStyles();
   const { loading, error, data } = useQuery(API_CALL);
 
-  console.log(data,loading,error,'data')
+  console.log(data, loading, error, "data");
 
   return (
     <React.Fragment>

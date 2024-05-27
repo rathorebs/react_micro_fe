@@ -7,10 +7,13 @@ const packageJson = require("../package.json");
 const devConfig = {
   mode: "development",
   output: {
-    publicPath: "http://localhost:8081/",
+    publicPath: "http://localhost:8084/",
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js", ".jsx", ".graphql"],
   },
   devServer: {
-    port: 8081,
+    port: 8084,
     historyApiFallback: {
       historyApiFallback: true,
     },
@@ -20,7 +23,7 @@ const devConfig = {
       name: "caryfy",
       filename: "remoteEntry.js",
       exposes: {
-        "./MarketingApp": "./src/bootstrap",
+        "./CaryfyApp": "./src/bootstrap",
       },
       shared: packageJson.dependencies,
     }),

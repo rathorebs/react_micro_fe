@@ -18,10 +18,16 @@ module.exports = {
         },
       },
       {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "graphql-tag/loader",
+        },
+      },
+      {
         test: /\.(css|s[ac]ss)$/i,
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
     ],
   },
- 
 };

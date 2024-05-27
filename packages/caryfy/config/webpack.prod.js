@@ -1,20 +1,23 @@
-const { merge } = require('webpack-merge');
-const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
-const packageJson = require('../package.json');
-const commonConfig = require('./webpack.common');
+const { merge } = require("webpack-merge");
+const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const packageJson = require("../package.json");
+const commonConfig = require("./webpack.common");
 
 const prodConfig = {
-  mode: 'production',
+  mode: "production",
   output: {
-    filename: '[name].[contenthash].js',
-    publicPath: '/caryfy/latest/',
+    filename: "[name].[contenthash].js",
+    publicPath: "/caryfy/latest/",
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js", ".jsx", ".graphql"],
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'caryfy',
-      filename: 'remoteEntry.js',
+      name: "caryfy",
+      filename: "remoteEntry.js",
       exposes: {
-        './MarketingApp': './src/bootstrap',
+        "./CaryfyApp": "./src/bootstrap",
       },
       shared: packageJson.dependencies,
     }),
