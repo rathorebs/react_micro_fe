@@ -9,7 +9,7 @@ const devConfig = {
     publicPath: "http://localhost:8080/",
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".jsx", ".js"],
+    extensions: [".tsx", ".ts", ".jsx", ".js", ".graphql"],
   },
   devServer: {
     port: 8080,
