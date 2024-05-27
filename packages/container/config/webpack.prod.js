@@ -18,7 +18,7 @@ const prodConfig = {
         marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
         auth: `auth@${domain}/auth/latest/remoteEntry.js`,
         dashboard: `dashboard@${domain}/dashboard/latest/remoteEntry.js`,
-        auth: `caryfy@${domain}/caryfy/latest/remoteEntry.js`,
+        caryfy: `caryfy@${domain}/caryfy/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
