@@ -7,6 +7,7 @@ import {
 
 import Landing from "./components/Landing";
 import Pricing from "./components/Pricing";
+import CancelShift from "./pages/CancelShift/CancelShift";
 import ApolloClientProvider from "./providers/apollo-client";
 
 const generateClassName = createGenerateClassName({
@@ -21,6 +22,7 @@ export default ({ history }) => {
           <Router history={history}>
             <Switch>
               <Route exact path="/pricing" component={Pricing} />
+              <Route path="/cancelshift" component={CancelShift} />
               <Route path="/" component={Landing} />
             </Switch>
           </Router>
