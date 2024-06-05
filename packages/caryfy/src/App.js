@@ -28,7 +28,7 @@ export default ({ history }) => {
         <ApolloClientProvider>
           <Router history={history}>
             <Switch>
-              <Route path="caryfy/askcary" component={AskCaryPage} />
+              <Route path="/askcary" component={AskCaryPage} />
               <Route path="/cancelshift" component={CancelShift} />
               <Route path="/login" component={Login} />
               <Route path="/dash" component={CaryfyDashBoard} />
