@@ -14,7 +14,7 @@ const AskCaryPage: FunctionComponent = () => {
         <div className="w-full flex flex-col items-center justify-start py-0 px-5 box-border gap-[24px] max-w-[1366px] z-[1] mq1400:max-w-full">
           <AskCaryShifts />
           <AskcaryDocuments />
-          <InputsNew contentPlaceholder="How can i Help you?" label="" type="text" imgSrc={ioniconmmicoutline} />
+          <InputsNew contentPlaceholder="How can i Help you????" label="" type="text" imgSrc={ioniconmmicoutline} />
         </div>
       </div>
       <KPIItem />
