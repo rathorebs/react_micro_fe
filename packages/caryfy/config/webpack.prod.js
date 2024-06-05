@@ -10,12 +10,12 @@ const prodConfig = {
     filename: "[name].[contenthash].js",
     publicPath: "/caryfy/latest/",
   },
-  resolve: {
-    alias: {
+  /* resolve: {
+     alias: {
       "@pages": path.resolve(__dirname, "src/pages"),
-    },
+    }, 
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
-  },
+  }, */
   plugins: [
     new ModuleFederationPlugin({
       name: "caryfy",
