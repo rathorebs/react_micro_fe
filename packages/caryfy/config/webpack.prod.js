@@ -12,7 +12,7 @@ const prodConfig = {
   },
   resolve: {
     alias: {
-      components: path.resolve(__dirname, "src/"),
+      "@pages": path.resolve(__dirname, "src/pages"),
     },
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
   },
