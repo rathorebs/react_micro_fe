@@ -11,6 +11,9 @@ const prodConfig = {
     publicPath: "/caryfy/latest/",
   },
   resolve: {
+    alias: {
+      components: path.resolve(__dirname, "src/"),
+    },
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
   },
   plugins: [

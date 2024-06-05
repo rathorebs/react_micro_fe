@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.prod.js"
+    "build": "webpack --config config/webpack.prod.js",
+    "build:start": "cd dist && PORT=9001 npx serve"
   },
   "dependencies": {
     "@apollo/client": "^3.10.4",
