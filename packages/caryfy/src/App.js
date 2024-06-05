@@ -10,7 +10,7 @@ import Pricing from "./components/Pricing";
 import NewFile from "./components/NewFile.tsx";
 import ApolloClientProvider from "./providers/apollo-client";
 import OnBoardPayerInformation from "./pages/Management/OnBoardPayerInformation.tsx";
-import Agencyinformation from "./pages/Management/Agencyinformation.tsx";
+import AgencyInformation from "./pages/Management/Agencyinformation.tsx";
 import OnBoardPlanOfCare from "./pages/Management/OnBoardplanOfcare.tsx";
 import CaryfyDashBoard from "./pages/Dashboard/CaryfyDashBoard.tsx";
 import AskCaryPage from "./pages/AskCary/AskCaryPage.tsx";
@@ -33,7 +33,7 @@ export default ({ history }) => {
               <Route path="/login" component={Login} />
               <Route path="/dash" component={CaryfyDashBoard} />
               <Route path="/planofcare" component={OnBoardPlanOfCare} />
-              <Route path="/agency" component={Agencyinformation} />
+              <Route path="/agency" component={AgencyInformation} />
               <Route path="/onboard" component={OnBoardPayerInformation} />
               <Route exact path="/pricing" component={Pricing} />
               <Route exact path="/newfile" component={NewFile} />
