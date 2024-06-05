@@ -2,7 +2,7 @@ import React from "react";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://testapiwizkind.yaahr.com/caryfy/management/",
+  uri: "https://flyby-router-demo.herokuapp.com/",
   cache: new InMemoryCache(),
 });
 

@@ -28,18 +28,6 @@ module.exports = {
         test: /\.(css|s[ac]ss)$/i,
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192, // If the file is larger than 8kb, file-loader will be used as fallback
-              name: 'images/[name].[hash:8].[ext]',
-            },
-          },
-        ],
-      },
     ],
   },
 };
