@@ -3,7 +3,7 @@ name: deploy-caryfy
 on:
   push:
     branches:
-      - bhanwar
+      - master
     paths:
       - "packages/caryfy/**"
 
