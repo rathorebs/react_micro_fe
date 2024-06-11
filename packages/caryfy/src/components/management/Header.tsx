@@ -1,15 +1,15 @@
-import React from "react";
-import caryfyTagline from "../../assets/caryfy-tagline1.svg";
-import otlrocket1 from "../../assets/otlrocket1.svg";
-import otldocuments1 from "../../assets/kpi-items/otldocumenttext1.svg";
-import ioniconfflashoutline1 from "../../assets/ioniconfflashoutline1.svg";
-import ioniconcchatboxoutline1 from "../../assets/ioniconcchatboxoutline1.svg";
-import ioniconccalendaroutline1 from "../../assets/ioniconccalendaroutline1.svg";
-import otlgrid1 from "../../assets/otlgrid1.svg";
-import image_18812x from "../../assets/image-1881@2x.png";
-import ioniconcchevrondown1 from "../../assets/ioniconcchevrondown1.svg";
+import { FunctionComponent } from "react";
+import caryfyTagline from '../../assets/caryfy-tagline1.svg'
+import otlrocket1 from '../../assets/otlrocket1.svg'
+import otldocuments1 from '../../assets/kpi-items/otldocumenttext1.svg'
+import ioniconfflashoutline1 from '../../assets/ioniconfflashoutline1.svg'
+import ioniconcchatboxoutline1 from '../../assets/ioniconcchatboxoutline1.svg'
+import ioniconccalendaroutline1 from '../../assets/ioniconccalendaroutline1.svg'
+import otlgrid1 from '../../assets/otlgrid1.svg'
+import image_18812x from '../../assets/image-1881@2x.png'
+import ioniconcchevrondown1 from '../../assets/ioniconcchevrondown1.svg'
 
-const Header = () => {
+const Header: FunctionComponent = () => {
   return (
     <header className="self-stretch bg-app-background box-border flex flex-row items-center justify-center pt-2 px-5 pb-1.5 top-[0] z-[99] fixed w-full text-left text-sm text-headings font-base-md-regular border-b-[1px] border-solid border-stroke-light">
       <div className="w-[1331px] flex flex-row items-center justify-start gap-[24px] max-w-[1392px] mq1425:max-w-full">

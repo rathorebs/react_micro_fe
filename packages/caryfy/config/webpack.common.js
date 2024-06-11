@@ -1,6 +1,7 @@
 module.exports = {
   module: {
     rules: [
+      
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
@@ -11,6 +12,18 @@ module.exports = {
             plugins: ["@babel/plugin-transform-runtime"],
           },
         },
+      },
+      {
+        test: /\.(ts)x?$/,
+        exclude: /node_modules|\.d\.ts$/, // this line as well
+        use: {
+          loader: 'ts-loader',
+          options: {
+          compilerOptions: {
+          noEmit: false, // this option will solve the issue
+         },
+        },
+       },
       },
       {
         test: /\.(graphql|gql)$/,
@@ -27,10 +40,10 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
             options: {
               limit: 8192, // If the file is larger than 8kb, file-loader will be used as fallback
-              name: "images/[name].[hash:8].[ext]",
+              name: 'images/[name].[hash:8].[ext]',
             },
           },
         ],

@@ -1,10 +1,10 @@
-import React from "react";
+import { FunctionComponent } from "react";
 import { useHistory } from "react-router-dom";
 import InputsNew from "../management/InputsNew";
 import dftarrowback from "../../assets/cancel-shift/dftarrowback.svg";
 import image_2 from "../../assets/cancel-shift/image@2x.png";
 
-const CancelShiftContainer = () => {
+const CancelShiftContainer: FunctionComponent = () => {
     const history = useHistory();
 
     function handleClick() {

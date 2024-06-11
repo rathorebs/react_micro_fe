@@ -175,8 +175,8 @@ const ContainerForPayerInfo = () => {
                         <img className="h-3 w-3 relative" alt="" src={pluslg} />
                     </div>
                 </div>
-                {showCallTypeTable && <CallTypeTable payerTypes={PayerTypes} shiftTypeOptions={shiftTypeOptions} onCancel={handleCancel} />}
-                <Table columns={columns} initialData={data} />
+                {showCallTypeTable && <CallTypeTable programNames={ProgramNames} shiftTypeOptions={shiftTypeOptions} onCancel={handleCancel} />}
+                <Table columns={columns} initialData={data} showActionColumn={true}/>
                 <div className="self-stretch flex flex-col items-end justify-center mq950:items-center mq950:justify-center mq950:pb-20 mq950:box-border">
                     <button className="cursor-pointer [border:none] py-[12.5px] px-[52px] bg-main-blue rounded-radiuscomponent-button flex flex-row items-center justify-center gap-[12px] hover:bg-dodgerblue" onClick={handleNextClick}>
                         <div className="relative text-sm font-body-reg text-text-text-tertiary text-center inline-block min-w-[31px]">

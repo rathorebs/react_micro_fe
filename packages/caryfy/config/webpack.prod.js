@@ -9,6 +9,7 @@ const prodConfig = {
     filename: "[name].[contenthash].js",
     publicPath: "/caryfy/latest/",
   },
+  resolve: { extensions: ["", ".ts", ".tsx", ".js", ".json"], },
   plugins: [
     new ModuleFederationPlugin({
       name: "caryfy",

@@ -5,12 +5,12 @@ import lefticon from "../../assets/lefticon.svg";
 import lefticon1 from "../../assets/lefticon1.svg";
 
 interface CallTypeTableProps {
-    payerTypes: string[],
+    programNames: string[],
     shiftTypeOptions: string[],
     onCancel: () => void,
 }
 
-const CallTypeTable: FunctionComponent<CallTypeTableProps> = ({ payerTypes, shiftTypeOptions, onCancel }) => {
+const CallTypeTable: FunctionComponent<CallTypeTableProps> = ({ programNames, shiftTypeOptions, onCancel }) => {
 
     const [callType, setCallType] = useState('');
     const [payerType, setPayerType] = useState('');
@@ -47,13 +47,13 @@ const CallTypeTable: FunctionComponent<CallTypeTableProps> = ({ payerTypes, shif
             <div className="self-stretch flex flex-row flex-wrap items-start justify-center py-0 pr-1.5 pl-0 gap-[16px_14.7px]">
                 <InputsNew label="Call Type" contentPlaceholder="call type" type="text" value={callType} onChange={(e) => setCallType(e.target.value)} />
                 <InputsDropdown
-                    label="Payer type"
-                    placeHolder="Payer type"
-                    options={payerTypes}
+                    label="Program Name"
+                    placeHolder="program name"
+                    options={programNames}
                     onSelect={setPayerType}
                 />
                 <InputsDropdown
-                    label="Shift type"
+                    label="Shift Type"
                     placeHolder="shift type"
                     options={shiftTypeOptions}
                     onSelect={setShiftType}

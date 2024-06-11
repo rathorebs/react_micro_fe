@@ -33,7 +33,7 @@ const InputsDropdown: FunctionComponent<InputsDropdownProps> = ({ label, placeHo
 
     return (
         <div
-            className={`relative flex-1 flex flex-col items-start justify-start gap-[8px] min-w-[191px] max-w-[322px] text-left text-sm text-text-text-primary font-body-reg`}
+            className={`relative flex-1 flex flex-col items-start justify-start gap-[8px]  max-w-[322px] text-left text-sm text-text-text-primary font-body-reg`}
         >
             <div className="self-stretch relative font-semibold">{label}</div>
             <div className="self-stretch flex flex-col items-start justify-start text-text-text-secondary">

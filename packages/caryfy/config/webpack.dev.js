@@ -9,12 +9,9 @@ const devConfig = {
   output: {
     publicPath: "http://localhost:8084/",
   },
-  /* resolve: {
-    alias: {
-      'components': path.resolve(__dirname, 'src/components/'),
-    },
-    extensions: [".js", ".jsx", ".json", ".graphql"],
-  }, */
+  resolve: {
+    extensions: [".tsx", ".ts", ".js", ".jsx", ".graphql"],
+  },
   devServer: {
     port: 8084,
     historyApiFallback: {
