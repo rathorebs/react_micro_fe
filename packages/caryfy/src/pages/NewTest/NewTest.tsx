@@ -1,10 +1,10 @@
 import React from "react";
 
 export interface IAppProps {
-    type:string
+  type: string
 }
 
-export default function NewTest (props: IAppProps) {
+export default function NewTest(props: IAppProps) {
   return (
     <div>
       Hello Home Page
