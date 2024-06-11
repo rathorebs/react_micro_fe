@@ -3,7 +3,7 @@ name: deploy-dashboard
 on:
   push:
     branches:
-      - bhanwar
+      - master
     paths:
       - "packages/dashboard/**"
 
