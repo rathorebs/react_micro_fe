@@ -8,7 +8,7 @@ export default function NewTest2(props: IAppProps) {
   return (
     <>
       <div>
-        Hello New Page 999999
+        Hello New Page 8888
       </div>
     </>
 

@@ -9,9 +9,9 @@ import { createBrowserHistory } from "history";
 import Progress from "./components/Progress";
 import Header from "./components/Header";
 const CaryfyLazy = lazy(() => import("./components/CaryfyApp"));
-const MarketingLazy = lazy(() => import("./components/MarketingApp"));
-const AuthLazy = lazy(() => import("./components/AuthApp"));
-const DashboardLazy = lazy(() => import("./components/DashboardApp"));
+//const MarketingLazy = lazy(() => import("./components/MarketingApp"));
+//const AuthLazy = lazy(() => import("./components/AuthApp"));
+//const DashboardLazy = lazy(() => import("./components/DashboardApp"));
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "co",
@@ -32,21 +32,21 @@ export default () => {
     <Router history={history}>
       <StylesProvider generateClassName={generateClassName}>
         <div>
-          <Header
+          {/*  <Header
             onSignOut={() => setIsSignedIn(false)}
             isSignedIn={isSignedIn}
-          />
+          /> */}
           <Suspense fallback={<Progress />}>
             <Switch>
-              <Route path="/auth">
+              {/* <Route path="/auth">
                 <AuthLazy onSignIn={() => setIsSignedIn(true)} />
-              </Route>
-              <Route path="/dashboard">
+              </Route> */}
+              {/* <Route path="/dashboard">
                 {!isSignedIn && <Redirect to="/" />}
                 <DashboardLazy />
-              </Route>
-              <Route path="/" component={MarketingLazy} />
-              <Route path="/caryfy" component={CaryfyLazy} />
+              </Route> */}
+              {/*  <Route path="/" component={MarketingLazy} /> */}
+              <Route path="/" component={CaryfyLazy} />
             </Switch>
           </Suspense>
         </div>
